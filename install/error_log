@@ -1,0 +1,191 @@
+[21-Jul-2025 00:21:44 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:22:25 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:22:32 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:22:33 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:24:33 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:24:34 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:24:40 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:24:44 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:26:31 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:26:35 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:26:38 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:28:18 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:28:20 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:28:21 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:28:23 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:28:24 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:28:35 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:30:17 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:32:18 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function split() in /home/hattelkom/public_html/install/install.tools.inc.php:11
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.php(13): processStep1('')
+#1 {main}
+  thrown in /home/hattelkom/public_html/install/install.tools.inc.php on line 11
+[21-Jul-2025 00:35:46 Europe/Istanbul] PHP Warning:  preg_split(): Delimiter must not be alphanumeric, backslash, or NUL byte in /home/hattelkom/public_html/install/install.tools.inc.php on line 4
+[21-Jul-2025 00:35:46 Europe/Istanbul] PHP Warning:  Trying to access array offset on false in /home/hattelkom/public_html/install/install.tools.inc.php on line 18
+[21-Jul-2025 00:36:53 Europe/Istanbul] PHP Warning:  preg_split(): Delimiter must not be alphanumeric, backslash, or NUL byte in /home/hattelkom/public_html/install/install.tools.inc.php on line 4
+[21-Jul-2025 00:38:06 Europe/Istanbul] PHP Warning:  preg_split(): No ending delimiter '.' found in /home/hattelkom/public_html/install/install.tools.inc.php on line 4
+[21-Jul-2025 00:38:09 Europe/Istanbul] PHP Warning:  preg_split(): No ending delimiter '.' found in /home/hattelkom/public_html/install/install.tools.inc.php on line 4
+[21-Jul-2025 00:40:02 Europe/Istanbul] PHP Warning:  preg_split(): Delimiter must not be alphanumeric, backslash, or NUL byte in /home/hattelkom/public_html/install/install.tools.inc.php on line 4
+[21-Jul-2025 00:40:06 Europe/Istanbul] PHP Warning:  preg_split(): Delimiter must not be alphanumeric, backslash, or NUL byte in /home/hattelkom/public_html/install/install.tools.inc.php on line 4
+[21-Jul-2025 00:42:00 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php:116
+Stack trace:
+#0 /home/hattelkom/public_html/common/lib/adodb.inc.php(246): ADODB_mysql->_pconnect('127.0.0.1', 'hattelkom_olnic...', '1Buw*YhDFG!kBYg...', 'hattelkom_olnic')
+#1 /home/hattelkom/public_html/install/install.tools.inc.php(84): ADOConnection->PConnect('127.0.0.1', 'hattelkom_olnic...', '1Buw*YhDFG!kBYg...', 'hattelkom_olnic')
+#2 /home/hattelkom/public_html/install/install.php(15): processStep2('')
+#3 {main}
+  thrown in /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php on line 116
+[21-Jul-2025 00:45:22 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php:178
+Stack trace:
+#0 /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php(118): ADODB_mysql->SelectDB('hattelkom_olnic')
+#1 /home/hattelkom/public_html/common/lib/adodb.inc.php(246): ADODB_mysql->_pconnect('127.0.0.1', 'hattelkom_olnic...', '1Buw*YhDFG!kBYg...', 'hattelkom_olnic')
+#2 /home/hattelkom/public_html/install/install.tools.inc.php(88): ADOConnection->PConnect('127.0.0.1', 'hattelkom_olnic...', '1Buw*YhDFG!kBYg...', 'hattelkom_olnic')
+#3 /home/hattelkom/public_html/install/install.php(15): processStep2('')
+#4 {main}
+  thrown in /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php on line 178
+[21-Jul-2025 00:52:09 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_select_db() in /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php:178
+Stack trace:
+#0 /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php(118): ADODB_mysql->SelectDB('hattelkom_olnic')
+#1 /home/hattelkom/public_html/common/lib/adodb.inc.php(246): ADODB_mysql->_pconnect('127.0.0.1', 'hattelkom_olnic...', '1Buw*YhDFG!kBYg...', 'hattelkom_olnic')
+#2 /home/hattelkom/public_html/install/install.tools.inc.php(88): ADOConnection->PConnect('127.0.0.1', 'hattelkom_olnic...', '1Buw*YhDFG!kBYg...', 'hattelkom_olnic')
+#3 /home/hattelkom/public_html/install/install.php(15): processStep2('')
+#4 {main}
+  thrown in /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php on line 178
+[21-Jul-2025 00:53:21 Europe/Istanbul] PHP Warning:  Undefined variable $website_language in /home/hattelkom/public_html/install/step2.php on line 131
+[21-Jul-2025 00:53:21 Europe/Istanbul] PHP Warning:  Undefined variable $website_language in /home/hattelkom/public_html/install/step2.php on line 137
+[21-Jul-2025 00:54:26 Europe/Istanbul] PHP Fatal error:  Uncaught Error: Call to undefined function ereg() in /home/hattelkom/public_html/common/func.inc.php:423
+Stack trace:
+#0 /home/hattelkom/public_html/install/install.tools.inc.php(171): checkAscii('color.printer19')
+#1 /home/hattelkom/public_html/install/install.php(17): processStep3('')
+#2 {main}
+  thrown in /home/hattelkom/public_html/common/func.inc.php on line 423
+[21-Jul-2025 00:56:22 Europe/Istanbul] PHP Warning:  preg_match(): Unknown modifier ']' in /home/hattelkom/public_html/common/func.inc.php on line 17
+[21-Jul-2025 00:56:48 Europe/Istanbul] PHP Warning:  preg_match(): Unknown modifier ']' in /home/hattelkom/public_html/common/func.inc.php on line 17
+[21-Jul-2025 00:57:06 Europe/Istanbul] PHP Warning:  preg_match(): Unknown modifier ']' in /home/hattelkom/public_html/common/func.inc.php on line 17
+[21-Jul-2025 00:57:17 Europe/Istanbul] PHP Warning:  preg_match(): Unknown modifier ']' in /home/hattelkom/public_html/common/func.inc.php on line 17
+[21-Jul-2025 00:58:00 Europe/Istanbul] PHP Warning:  preg_match(): Unknown modifier ']' in /home/hattelkom/public_html/common/func.inc.php on line 17
+[21-Jul-2025 01:00:41 Europe/Istanbul] PHP Warning:  preg_match(): Unknown modifier ']' in /home/hattelkom/public_html/common/func.inc.php on line 17
+[21-Jul-2025 01:01:33 Europe/Istanbul] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, int given in /home/hattelkom/public_html/common/fix_mysql.inc.php:106
+Stack trace:
+#0 /home/hattelkom/public_html/common/fix_mysql.inc.php(106): mysqli_num_rows(-1)
+#1 /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php(294): mysql_num_rows(-1)
+#2 /home/hattelkom/public_html/common/lib/adodb.inc.php(1426): ADORecordSet_mysql->_initrs()
+#3 /home/hattelkom/public_html/common/lib/adodb.inc.php(505): ADORecordSet->Init()
+#4 /home/hattelkom/public_html/install/install.tools.inc.php(279): ADOConnection->Execute('select * from a...')
+#5 /home/hattelkom/public_html/install/install.php(17): processStep3('')
+#6 {main}
+  thrown in /home/hattelkom/public_html/common/fix_mysql.inc.php on line 106
+[21-Jul-2025 01:03:47 Europe/Istanbul] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, int given in /home/hattelkom/public_html/common/fix_mysql.inc.php:106
+Stack trace:
+#0 /home/hattelkom/public_html/common/fix_mysql.inc.php(106): mysqli_num_rows(-1)
+#1 /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php(294): mysql_num_rows(-1)
+#2 /home/hattelkom/public_html/common/lib/adodb.inc.php(1426): ADORecordSet_mysql->_initrs()
+#3 /home/hattelkom/public_html/common/lib/adodb.inc.php(505): ADORecordSet->Init()
+#4 /home/hattelkom/public_html/install/install.tools.inc.php(279): ADOConnection->Execute('select * from a...')
+#5 /home/hattelkom/public_html/install/install.php(17): processStep3('')
+#6 {main}
+  thrown in /home/hattelkom/public_html/common/fix_mysql.inc.php on line 106
+[21-Jul-2025 01:03:57 Europe/Istanbul] PHP Fatal error:  Uncaught TypeError: mysqli_num_rows(): Argument #1 ($result) must be of type mysqli_result, int given in /home/hattelkom/public_html/common/fix_mysql.inc.php:106
+Stack trace:
+#0 /home/hattelkom/public_html/common/fix_mysql.inc.php(106): mysqli_num_rows(-1)
+#1 /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php(294): mysql_num_rows(-1)
+#2 /home/hattelkom/public_html/common/lib/adodb.inc.php(1426): ADORecordSet_mysql->_initrs()
+#3 /home/hattelkom/public_html/common/lib/adodb.inc.php(505): ADORecordSet->Init()
+#4 /home/hattelkom/public_html/install/install.tools.inc.php(279): ADOConnection->Execute('select * from a...')
+#5 /home/hattelkom/public_html/install/install.php(17): processStep3('')
+#6 {main}
+  thrown in /home/hattelkom/public_html/common/fix_mysql.inc.php on line 106
+[21-Jul-2025 01:05:15 Europe/Istanbul] PHP Fatal error:  Uncaught TypeError: mysqli_num_fields(): Argument #1 ($result) must be of type mysqli_result, int given in /home/hattelkom/public_html/common/fix_mysql.inc.php:211
+Stack trace:
+#0 /home/hattelkom/public_html/common/fix_mysql.inc.php(211): mysqli_num_fields(-1)
+#1 /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php(295): mysql_num_fields(-1)
+#2 /home/hattelkom/public_html/common/lib/adodb.inc.php(1426): ADORecordSet_mysql->_initrs()
+#3 /home/hattelkom/public_html/common/lib/adodb.inc.php(505): ADORecordSet->Init()
+#4 /home/hattelkom/public_html/install/install.tools.inc.php(279): ADOConnection->Execute('select * from a...')
+#5 /home/hattelkom/public_html/install/install.php(17): processStep3('')
+#6 {main}
+  thrown in /home/hattelkom/public_html/common/fix_mysql.inc.php on line 211
+[21-Jul-2025 01:06:07 Europe/Istanbul] PHP Fatal error:  Uncaught TypeError: mysqli_num_fields(): Argument #1 ($result) must be of type mysqli_result, int given in /home/hattelkom/public_html/common/fix_mysql.inc.php:211
+Stack trace:
+#0 /home/hattelkom/public_html/common/fix_mysql.inc.php(211): mysqli_num_fields(-1)
+#1 /home/hattelkom/public_html/common/lib/drivers/adodb-mysql.inc.php(295): mysql_num_fields(-1)
+#2 /home/hattelkom/public_html/common/lib/adodb.inc.php(1426): ADORecordSet_mysql->_initrs()
+#3 /home/hattelkom/public_html/common/lib/adodb.inc.php(505): ADORecordSet->Init()
+#4 /home/hattelkom/public_html/install/install.tools.inc.php(279): ADOConnection->Execute('select * from a...')
+#5 /home/hattelkom/public_html/install/install.php(17): processStep3('')
+#6 {main}
+  thrown in /home/hattelkom/public_html/common/fix_mysql.inc.php on line 211
+[21-Jul-2025 01:23:52 Europe/Istanbul] PHP Warning:  Undefined variable $website_language in /home/hattelkom/public_html/install/step2.php on line 131
+[21-Jul-2025 01:23:52 Europe/Istanbul] PHP Warning:  Undefined variable $website_language in /home/hattelkom/public_html/install/step2.php on line 137

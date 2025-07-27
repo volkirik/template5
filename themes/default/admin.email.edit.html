@@ -1,0 +1,37 @@
+    <link href="/varghese/nic/template3/themes/default/style.css" rel="stylesheet" type="text/css">
+<center>Email customization</center>
+<form action={$php_self}>
+<table align=center class=border1 bgcolor=white cellpadding=4 cellspacing=2>
+	<tr>
+		<td bgcolor=#E1ECFB colspan=3>Subject: &nbsp; 
+			<input type=text name=email_subject value={$email_subject} style="width: 375px;">
+		<td>
+	</tr>
+	 
+	<tr>
+		<td align=center bgcolor=#E1ECFB colspan=3>
+		    <textarea name=email_body rows=15 cols=60 class="color">{$email_body}</textarea>
+		</td>
+	</tr>
+	<tr>
+	    <td><font style="font-size: 12px;">
+		    You can use the following macros inside the email template.<br>{$email_macros}</font>
+		<td>
+	</tr>
+	<tr style="display:{$days_display} "> 
+	    <td >Send notification before &nbsp; 
+			<input type=text name=days_count1 value='' style="width: 25px;"> &nbsp; , &nbsp; 
+			<input type=text name=days_count1 value='' style="width: 25px;"> &nbsp; and &nbsp; 
+			<input type=text name=days_count1 value='' style="width: 25px;"> &nbsp; days.
+		</td>
+	</tr>
+	<tr>
+	    <td align=center colspan=3>
+		    <input type=submit name=submit value=Save> &nbsp;
+			<input type=submit name=test_email value="Test Settings"> &nbsp;
+			<input type=button value=Cancel onClick="history.back()">
+			<input type=hidden name=function value={$function}>
+		</td>
+	</tr>
+</table>
+</form>

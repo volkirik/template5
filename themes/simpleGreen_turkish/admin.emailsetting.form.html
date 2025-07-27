@@ -1,0 +1,129 @@
+<html>
+<head>
+    <!-- <link href="{$RELA_DIR}/themes/{$CURRENT_THEME}/style.css" rel="stylesheet" type="text/css"> -->
+    <link href="/varghese/nic/template3/themes/default/style.css" rel="stylesheet" type="text/css">
+
+    <script language="javascript" type="text/javascript">
+    // Bu fonksiyon, bir katmanı göstermek veya gizlemek için kullanılır.
+
+    function show_smtp(index) { 
+        var selected_values = document.notification.mta.options[index].value;
+        if (selected_values == 'smtp') {
+            document.getElementById('test').style.display = '';
+        } else { 
+            document.getElementById('test').style.display = 'none';
+        }
+    }
+    </script>
+
+    <!--
+    <div id="box" style="display:none; left:5px; top:250px; z-index:1">
+    TESTING</div>
+
+    <a href="javascript:showHide('box')" name="comments">Yorumları Gör</a>
+    -->
+</head>
+<body bgcolor="lightgrey">
+
+<form action="" method="POST" name="notification">
+<table class="border1" align="center" bgcolor="white">
+    <tr>
+        <td>
+            <table bgcolor="white" cellpadding="4" cellspacing="1">
+              <tr>
+                    <td align="right" bgcolor="#E1ECFB">
+                        "Gönderen" Adı: <font color="red">*</font>&nbsp;
+                        <input type="text" name="from_name" value="{$from_name}">
+                    </td>
+                    <td bgcolor="#E1ECFB"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td bgcolor="#E1ECFB">
+                        <input type="checkbox" name="reg_domain" value="reg_domain" {$register_status}> 
+                            Alan adı kayıt e-postası gönderir 
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="/{$ROOT_DIR}/templates/{$CURRENT_SKIN}/admin.email.edit.php?action=register">[özelleştir]</a>
+                    </td>
+              </tr>
+              <tr>
+                    <td align="right" bgcolor="#E1ECFB">
+                        "Gönderen" Adresi: <font color="red">*</font>
+                        <input type="text" name="from_email" value="{$from_email}">
+                    </td>
+                    <td bgcolor="#E1ECFB"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td bgcolor="#E1ECFB">
+                        <input type="checkbox" name="renew_domain" value="renew_domain" {$renew_status}> 
+                            Alan adı yenileme bildirim e-postası gönderir 
+                            <a href="/{$ROOT_DIR}/templates/{$CURRENT_SKIN}/admin.email.edit.php?action=renew">[özelleştir]</a>
+                    </td>
+              </tr>
+              <tr>
+                    <td align="right" bgcolor="#E1ECFB">
+                        Mail Transfer Agent &nbsp; &nbsp; &nbsp;
+                        <select name="mta" onChange="show_smtp(this.selectedIndex)">
+                            <option value="smtp" {$smtp_status}>SMTP</option>
+                            <option value="sendmail" {$sendmail_status}>Sendmail</option>
+                        </select>
+                    </td>
+                    <td bgcolor="#E1ECFB"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                    <td bgcolor="#E1ECFB">
+                        <input type="checkbox" name="resend_pass" value="resend_pass" {$password_status}> 
+                            Şifre kurtarma e-postası gönderir &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href="/{$ROOT_DIR}/templates/{$CURRENT_SKIN}/admin.email.edit.php?action=retrieve">[özelleştir]</a>
+                    </td>
+              </tr>  
+            <tr>
+            <td colspan="3" cellpadding="0" cellspacing="1">
+                <div id="test" style="display: ''; left:5px; top:250px; z-index:1">
+                <table width="100%" cellpadding="4" cellspacing="1">
+                    <tr><td colspan="3"><hr size="1"> </td></tr><tr> <td></td></tr>
+                    <tr>
+                        <td align="right" bgcolor="#E1ECFB">
+                            SMTP sunucusu: <font color="red">*</font>&nbsp;
+                            <input type="text" name="smtp_server" value="{$smtp_server}">
+                        </td>
+                        <td bgcolor="#E1ECFB"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                        <td bgcolor="#E1ECFB">
+                            SMTP portu: <font color="red">*</font>&nbsp;
+                            <input type="text" name="smtp_port" value="{$smtp_port}" style="width: 30px;">
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td align="center" bgcolor="#E1ECFB"> SMTP Kimlik Doğrulamasını Kullan &nbsp; &nbsp;  &nbsp; &nbsp;
+                            <input type="checkbox" value="smtp_auth" name="smtp_auth" {$smtp_auth}>
+                        </td>
+                        <td bgcolor="#E1ECFB" colspan="2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </td>
+                    </tr>                
+                    <tr>
+                        <td align="right" bgcolor="#E1ECFB">
+                            SMTP kullanıcı adı: <font color="red">*</font>&nbsp;
+                            <input type="text" name="smtp_user" value="{$smtp_user}">
+                        </td>
+                        <td bgcolor="#E1ECFB"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</td>
+                        <td bgcolor="#E1ECFB">
+                            SMTP şifresi: <font color="red">*</font>&nbsp;
+                            <input type="password" name="smtp_pass">    
+                        </td>
+                    </tr>
+                </table>
+                </div>
+             </td>
+             </tr>
+             
+            </table>
+        </td>
+    </tr>
+    
+    <tr>
+        <td align="right" colspan="3" style="font-size: 11px;"> <font color="red">*</font> zorunlu alanı belirtir </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center">
+            <input type="submit" name="Submit" value="Kaydet">
+            <input type="hidden" name="action" value="Cancel">
+            <input type="button" value="İptal" onClick="history.back()">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
+
