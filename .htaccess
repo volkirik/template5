@@ -11,7 +11,9 @@
 # To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
 # For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
 <IfModule php8_module>
-   php_flag display_errors On
+   php_flag display_errors Off
+   php_flag log_errors On
+   php_value error_log "/logs/error_log"
    php_value max_execution_time 300
    php_value max_input_time 300
    php_value max_input_vars 10000
@@ -23,7 +25,9 @@
    php_flag zlib.output_compression Off
 </IfModule>
 <IfModule lsapi_module>
-   php_flag display_errors On
+   php_flag display_errors Off
+   php_flag log_errors On
+   php_value error_log "/logs/error_log"
    php_value max_execution_time 300
    php_value max_input_time 300
    php_value max_input_vars 10000
