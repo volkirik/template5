@@ -1,1 +1,0 @@
-[21-Jul-2025 02:40:00 Europe/Istanbul] PHP Deprecated:  Implicit conversion from float 253000.99999999997 to int loses precision in /home/hattelkom/public_html/common/lib/adodb.inc.php on line 77
