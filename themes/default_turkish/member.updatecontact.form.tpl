@@ -31,7 +31,7 @@
     <tr> 
       <td width="25%" height="25">Kayıt Yaptıran</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_name" size="20" maxlength="20" value="{ $r_name}">
+        <input type="text" name="r_name" size="20" maxlength="20" value="{$r_name}">
         <font color="#FF0000">*</font> </td>
     </tr>
     <tr> 
@@ -43,25 +43,25 @@
     <tr> 
       <td width="25%" height="25">Sokak 1</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_address1" size="30" maxlength="60" value="{ $r_address1}">
+        <input type="text" name="r_address1" size="30" maxlength="60" value="{$r_address1}">
         <font color="#FF0000">*</font> </td>
     </tr>
     <tr> 
       <td width="25%" height="25">Sokak 2</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_address2" size="30" maxlength="60" value="{ $r_address2}">
+        <input type="text" name="r_address2" size="30" maxlength="60" value="{$r_address2}">
       </td>
     </tr>
     <tr> 
       <td width="25%" height="25">Sokak 3</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_address3" size="30" maxlength="60" value="{ $r_address3 }">
+        <input type="text" name="r_address3" size="30" maxlength="60" value="{$r_address3}">
       </td>
     </tr>
     <tr> 
       <td width="25%" height="25">Şehir</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_city" maxlength="60" value="{ $r_city}">
+        <input type="text" name="r_city" maxlength="60" value="{$r_city}">
         <font color="#FF0000">*</font> </td>
     </tr>
     <tr> 
@@ -94,19 +94,19 @@
     <tr> 
       <td width="25%" height="25">Telefon</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_telephone" maxlength="60" value="{ $r_telephone }">
+        <input type="text" name="r_telephone" maxlength="60" value="{$r_telephone}">
         <font color="#FF0000">*</font> </td>
     </tr>
     <tr> 
       <td width="25%" height="25">Faks</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_fax" maxlength="60" value="{ $r_fax}">
+        <input type="text" name="r_fax" maxlength="60" value="{$r_fax}">
         <font color="#FF0000">*</font> </td>
     </tr>
     <tr> 
       <td width="25%" height="25">E-posta</td>
       <td width="75%" height="25"> 
-        <input type="text" name="r_email" maxlength="60" value="{ $r_email}">
+        <input type="text" name="r_email" maxlength="60" value="{$r_email}">
         <font color="#FF0000">*</font> </td>
     </tr>
     <tr> 

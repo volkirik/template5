@@ -3,7 +3,7 @@
 <table width="95%" border="0" cellspacing="0" cellpadding="0" align="center">
    <tr>
      
-    <td width="25%" height="25" colspan="2"><b><font color="#990000">Register Successfully!</font></b> Your account has been charged ${$product_price[$year] }.<br>
+    <td width="25%" height="25" colspan="2"><b><font color="#990000">Register Successfully!</font></b> Your account has been charged ${$product_price[$year]}.<br>
       <br>
       <table width="90%" border="0" cellspacing="0" cellpadding="0" align="center">
         <tr> 

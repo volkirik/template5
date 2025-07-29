@@ -34,14 +34,14 @@
           <tr> 
             <td height="20" width="30%" bgcolor="#E1ECFB"><b>Product Name</b></td>
             <td height="20" width="70%" bgcolor="#F2F8FD"> 
-             {$product_name }
+             {$product_name}
             </td>
           </tr>
           <tr> 
             <td height="20" width="30%" bgcolor="#E1ECFB"><b>Product Type</b></td>
             <td height="20" width="70%" bgcolor="#F2F8FD"> 
 
-{ if $product_type == 1}
+{if $product_type == 1}
      Domain
 {elseif $product_type == 2}
 	Hosting

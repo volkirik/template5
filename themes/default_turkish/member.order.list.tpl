@@ -7,13 +7,13 @@
         <tr> 
           <td height="20" width="30%" bgcolor="#E1ECFB"><b>Hesap</b></td>
           <td height="20" width="70%" bgcolor="#F2F8FD"> <b>
-            { $member_info[1] }
+            {$member_info[1]}
             </b></td>
         </tr>
         <tr> 
           <td height="20" width="30%" bgcolor="#E1ECFB"><b>Seviye</b></td>
           <td height="20" width="70%" bgcolor="#F2F8FD"> <b>
-            { $member_info[4] }
+            {$member_info[4]}
             </b></td>
         </tr>
         <tr> 

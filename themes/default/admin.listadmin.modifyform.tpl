@@ -2,7 +2,7 @@
 <form action="{$content_action}" method="post">
   <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
     <?php
-{if $message != "" }
+{if $message != ""}
 
     <tr> 
       <td width="25%" height="25" colspan="2"> 
@@ -42,7 +42,7 @@
     <tr> 
       <td colspan="2" height="25">
 
-{if $init_admin_flag == 0 }
+{if $init_admin_flag == 0}
         <input type="checkbox" name="admin_flag" value="1">
 {else}
 	<input type="checkbox" name="admin_flag" value="1" checked>

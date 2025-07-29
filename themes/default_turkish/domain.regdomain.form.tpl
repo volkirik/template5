@@ -57,7 +57,7 @@ function regToBilling() {
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="25%">Alan adı:</td>
-            <td width="28%">{$domain }{$product_info[3] }</td>
+            <td width="28%">{$domain}{$product_info[3]}</td>
             <td width="12%">Fiyat</td>
             <td width="35%">
               <select name="year">
@@ -68,7 +68,7 @@ function regToBilling() {
           <tr> 
             <td width="25%">Alan adı için şifre:</td>
             <td width="28%"> 
-              <input type="password" name="password1" value="{ $password1}">
+              <input type="password" name="password1" value="{$password1}">
             </td>
             <td width="12%">Dns 1:</td>
             <td width="35%"> 
@@ -100,7 +100,7 @@ function regToBilling() {
           <tr> 
             <td width="39%">Organizasyon adı</td>
             <td width="61%"> 
-              <input type="text" name="r_org" value="{ $r_org}">
+              <input type="text" name="r_org" value="{$r_org}">
               <font color="#990000">*</font> 
             </td>
           </tr>
@@ -120,20 +120,20 @@ function regToBilling() {
           <tr> 
             <td width="39%">Adres 3</td>
             <td width="61%"> 
-              <input type="text" name="r_address3" value="{ $r_address3}" size="30">
+              <input type="text" name="r_address3" value="{$r_address3}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Şehir</td>
             <td width="61%"> 
-              <input type="text" name="r_city" value="{ $r_city }">
+              <input type="text" name="r_city" value="{$r_city}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Eyalet/Bölge</td>
             <td width="61%"> 
-              <input type="text" name="r_province" value="{ $r_province }">
+              <input type="text" name="r_province" value="{$r_province}">
               <font color="#990000">*</font>
             </td>
           </tr>
@@ -143,7 +143,7 @@ function regToBilling() {
               <select name="r_country">
 
 				{foreach item=val key=key from=$countries}
-						{if $key == $r_country }
+						{if $key == $r_country}
 							<option value={$key} selected>{$val}</option>
 						{else}
 							<option value={$key} >{$val}</option>
@@ -157,28 +157,28 @@ function regToBilling() {
           <tr> 
             <td width="39%">Posta Kodu</td>
             <td width="61%"> 
-              <input type="text" name="r_postalcode" value="{ $r_postalcode }">
+              <input type="text" name="r_postalcode" value="{$r_postalcode}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Telefon (ör: +1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="r_telephone" value="{$r_telephone }">
+              <input type="text" name="r_telephone" value="{$r_telephone}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Faks (ör: +1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="r_fax" value="{ $r_fax }">
+              <input type="text" name="r_fax" value="{$r_fax}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr>
             <td width="39%">E-posta</td>
             <td width="61%">
-              <input type="text" name="r_email" value="{ $r_email }" size="30">
+              <input type="text" name="r_email" value="{$r_email}" size="30">
               <font color="#990000">*</font>
             </td>
           </tr>
@@ -197,40 +197,40 @@ function regToBilling() {
           <tr> 
             <td width="39%">Organizasyon adı</td>
             <td width="61%"> 
-              <input type="text" name="a_org" value="{ $a_org}">
+              <input type="text" name="a_org" value="{$a_org}">
               <font color="#990000">*</font> 
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 1</td>
             <td width="61%"> 
-              <input type="text" name="a_address1" value="{ $a_address1 }" size="30">
+              <input type="text" name="a_address1" value="{$a_address1}" size="30">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 2</td>
             <td width="61%"> 
-              <input type="text" name="a_address2" value="{$a_address2 }" size="30">
+              <input type="text" name="a_address2" value="{$a_address2}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 3</td>
             <td width="61%"> 
-              <input type="text" name="a_address3" value="{$a_address3 }" size="30">
+              <input type="text" name="a_address3" value="{$a_address3}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Şehir</td>
             <td width="61%"> 
-              <input type="text" name="a_city" value="{$a_city }">
+              <input type="text" name="a_city" value="{$a_city}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Eyalet/Bölge</td>
             <td width="61%"> 
-              <input type="text" name="a_province" value="{$a_province }">
+              <input type="text" name="a_province" value="{$a_province}">
               <font color="#990000">*</font>
             </td>
           </tr>
@@ -240,7 +240,7 @@ function regToBilling() {
               <select name="a_country">
 
 {foreach item=val key=key from=$countries}
-						{if $key == $a_country }
+						{if $key == $a_country}
 							<option value={$key} selected>{$val}</option>
 						{else}
 							<option value={$key} >{$val}</option>
@@ -254,28 +254,28 @@ function regToBilling() {
           <tr> 
             <td width="39%">Posta Kodu</td>
             <td width="61%"> 
-              <input type="text" name="a_postalcode" value="{ $a_postalcode }">
+              <input type="text" name="a_postalcode" value="{$a_postalcode}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Telefon (ör: +1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="a_telephone" value="{ $a_telephone }">
+              <input type="text" name="a_telephone" value="{$a_telephone}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Faks (ör: +1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="a_fax" value="{$a_fax }">
+              <input type="text" name="a_fax" value="{$a_fax}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">E-posta</td>
             <td width="61%"> 
-              <input type="text" name="a_email" value="{ $a_email }" size="30">
+              <input type="text" name="a_email" value="{$a_email}" size="30">
               <font color="#990000">*</font>
             </td>
           </tr>
@@ -296,27 +296,27 @@ function regToBilling() {
           <tr> 
             <td width="39%">Organizasyon Adı</td>
             <td width="61%"> 
-              <input type="text" name="t_org" value="{$t_org }">
+              <input type="text" name="t_org" value="{$t_org}">
               <font color="#990000">*</font> 
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 1</td>
             <td width="61%"> 
-              <input type="text" name="t_address1" value="{ $r_address1 }" size="30">
+              <input type="text" name="t_address1" value="{$r_address1}" size="30">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 2</td>
             <td width="61%"> 
-              <input type="text" name="t_address2" value="{$t_address2 }" size="30">
+              <input type="text" name="t_address2" value="{$t_address2}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 3</td>
             <td width="61%"> 
-              <input type="text" name="t_address3" value="{$t_address3 }" size="30">
+              <input type="text" name="t_address3" value="{$t_address3}" size="30">
             </td>
           </tr>
           <tr> 
@@ -329,7 +329,7 @@ function regToBilling() {
           <tr> 
             <td width="39%">Eyalet/Bölge</td>
             <td width="61%"> 
-              <input type="text" name="t_province" value="{$t_province }">
+              <input type="text" name="t_province" value="{$t_province}">
               <font color="#990000">*</font>
             </td>
           </tr>
@@ -339,7 +339,7 @@ function regToBilling() {
               <select name="t_country">
 
             	{foreach item=val key=key from=$countries}
-						{if $key == $t_country }
+						{if $key == $t_country}
 							<option value={$key} selected>{$val}</option>
 						{else}
 							<option value={$key} >{$val}</option>
@@ -353,28 +353,28 @@ function regToBilling() {
           <tr> 
             <td width="39%">Posta Kodu</td>
             <td width="61%"> 
-              <input type="text" name="t_postalcode" value="{ $t_postalcode }">
+              <input type="text" name="t_postalcode" value="{$t_postalcode}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Telefon (ör: +1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="t_telephone" value="{$t_telephone }">
+              <input type="text" name="t_telephone" value="{$t_telephone}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Faks (ör: +1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="t_fax" value="{$t_fax }">
+              <input type="text" name="t_fax" value="{$t_fax}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">E-posta</td>
             <td width="61%"> 
-              <input type="text" name="t_email" value="{ $t_email }" size="30">
+              <input type="text" name="t_email" value="{$t_email}" size="30">
               <font color="#990000">*</font>
             </td>
           </tr>
@@ -389,47 +389,47 @@ function regToBilling() {
           <tr> 
             <td width="39%">Fatura İletişim Adı</td>
             <td width="61%"> 
-              <input type="text" name="billing" value="{ $billing }">
+              <input type="text" name="billing" value="{$billing}">
               <font color="#990000">*</font> 
             </td>
           </tr>
           <tr> 
             <td width="39%">Organizasyon Adı</td>
             <td width="61%"> 
-              <input type="text" name="b_org" value="{$b_org }">
+              <input type="text" name="b_org" value="{$b_org}">
               <font color="#990000">*</font> 
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 1</td>
             <td width="61%"> 
-              <input type="text" name="b_address1" value="{ $b_address1}" size="30">
+              <input type="text" name="b_address1" value="{$b_address1}" size="30">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 2</td>
             <td width="61%"> 
-              <input type="text" name="b_address2" value="{ $b_address2 }" size="30">
+              <input type="text" name="b_address2" value="{$b_address2}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Adres 3</td>
             <td width="61%"> 
-              <input type="text" name="b_address3" value="{$b_address3 }" size="30">
+              <input type="text" name="b_address3" value="{$b_address3}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Şehir</td>
             <td width="61%"> 
-              <input type="text" name="b_city" value="{ $b_city }">
+              <input type="text" name="b_city" value="{$b_city}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Eyalet/Bölge</td>
             <td width="61%"> 
-              <input type="text" name="b_province" value="{ $b_province }">
+              <input type="text" name="b_province" value="{$b_province}">
               <font color="#990000">*</font>
             </td>
           </tr>
@@ -440,7 +440,7 @@ function regToBilling() {
                 
 
             	{foreach item=val key=key from=$countries}
-						{if $key == $b_country }
+						{if $key == $b_country}
 							<option value={$key} selected>{$val}</option>
 						{else}
 							<option value={$key} >{$val}</option>
@@ -453,28 +453,28 @@ function regToBilling() {
           <tr> 
             <td width="39%">Posta Kodu</td>
             <td width="61%"> 
-              <input type="text" name="b_postalcode" value="{$b_postalcode }">
+              <input type="text" name="b_postalcode" value="{$b_postalcode}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Telefon (ör: +1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="b_telephone" value="{$b_telephone }">
+              <input type="text" name="b_telephone" value="{$b_telephone}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">Faks (ör: +1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="b_fax" value="{$b_fax }">
+              <input type="text" name="b_fax" value="{$b_fax}">
               <font color="#990000">*</font>
             </td>
           </tr>
           <tr> 
             <td width="39%">E-posta</td>
             <td width="61%"> 
-              <input type="text" name="b_email" value="{$b_email }" size="30">
+              <input type="text" name="b_email" value="{$b_email}" size="30">
               <font color="#990000">*</font>
             </td>
           </tr>

@@ -73,13 +73,13 @@
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr> 
             <td width="39%">Kayıt sahibinin tam adı</td>
-            <td width="61%"> {$registrant }
+            <td width="61%"> {$registrant}
             </td>
           </tr>
           <tr> 
             <td width="39%">Organizasyon adı</td>
             <td width="61%"> 
-              <input type="text" name="r_org" value="{$r_org }">
+              <input type="text" name="r_org" value="{$r_org}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
@@ -97,19 +97,19 @@
           <tr> 
             <td width="39%">Adres 3</td>
             <td width="61%"> 
-              <input type="text" name="r_address3" value="{$r_address3 }" size="30">
+              <input type="text" name="r_address3" value="{$r_address3}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Şehir</td>
             <td width="61%"> 
-              <input type="text" name="r_city" value="{$r_city }">
+              <input type="text" name="r_city" value="{$r_city}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Eyalet/İl</td>
             <td width="61%"> 
-              <input type="text" name="r_province" value="{ $r_province }">
+              <input type="text" name="r_province" value="{$r_province}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -128,19 +128,19 @@
           <tr> 
             <td width="39%">Posta Kodu</td>
             <td width="61%"> 
-              <input type="text" name="r_postalcode" value="{$r_postalcode }">
+              <input type="text" name="r_postalcode" value="{$r_postalcode}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Telefon (örneğin: +1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="r_telephone" value="{ $r_telephone }">
+              <input type="text" name="r_telephone" value="{$r_telephone}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Faks (örneğin: +1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="r_fax" value="{ $r_fax }">
+              <input type="text" name="r_fax" value="{$r_fax}">
               <font color="#990000">*</font></td>
           </tr>
           <tr>
@@ -162,7 +162,7 @@
           <tr> 
             <td width="39%">Yöneticinin tam adı</td>
             <td width="61%"> 
-              <input type="text" name="administrator" value="{$administrator }">
+              <input type="text" name="administrator" value="{$administrator}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
@@ -186,7 +186,7 @@
           <tr> 
             <td width="39%">Adres 3</td>
             <td width="61%"> 
-              <input type="text" name="a_address3" value="{$a_address3 }" size="30">
+              <input type="text" name="a_address3" value="{$a_address3}" size="30">
             </td>
           </tr>
           <tr> 
@@ -223,7 +223,7 @@
           <tr> 
             <td width="39%">Telefon (örneğin: +1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="a_telephone" value="{$a_telephone }">
+              <input type="text" name="a_telephone" value="{$a_telephone}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -235,7 +235,7 @@
           <tr> 
             <td width="39%">E-posta</td>
             <td width="61%"> 
-              <input type="text" name="a_email" value="{ $a_email}" size="30">
+              <input type="text" name="a_email" value="{$a_email}" size="30">
               <font color="#990000">*</font></td>
           </tr>
         </table>
@@ -257,7 +257,7 @@
           <tr> 
             <td width="39%">Organizasyon adı</td>
             <td width="61%"> 
-              <input type="text" name="t_org" value="{$t_org }">
+              <input type="text" name="t_org" value="{$t_org}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
@@ -306,25 +306,25 @@
           <tr> 
             <td width="39%">Posta Kodu</td>
             <td width="61%"> 
-              <input type="text" name="t_postalcode" value="{ $t_postalcode}">
+              <input type="text" name="t_postalcode" value="{$t_postalcode}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Telefon (örneğin: +1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="t_telephone" value="{ $t_telephone }">
+              <input type="text" name="t_telephone" value="{$t_telephone}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Faks (örneğin: +1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="t_fax" value="{ $t_fax}">
+              <input type="text" name="t_fax" value="{$t_fax}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">E-posta</td>
             <td width="61%"> 
-              <input type="text" name="t_email" value="{$t_email }" size="30">
+              <input type="text" name="t_email" value="{$t_email}" size="30">
               <font color="#990000">*</font></td>
           </tr>
         </table>
@@ -349,13 +349,13 @@
           <tr> 
             <td width="39%">Organizasyon adı</td>
             <td width="61%"> 
-			  <input type="text" name="b_org" value="{ $b_org}">
+			  <input type="text" name="b_org" value="{$b_org}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
             <td width="39%">Adres 1</td>
             <td width="61%"> 
-              <input type="text" name="b_address1" value="{ $b_address1}" size="30">
+              <input type="text" name="b_address1" value="{$b_address1}" size="30">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -367,7 +367,7 @@
           <tr> 
             <td width="39%">Adres 3</td>
             <td width="61%"> 
-              <input type="text" name="b_address3" value="{ $b_address3 }" size="30">
+              <input type="text" name="b_address3" value="{$b_address3}" size="30">
             </td>
           </tr>
           <tr> 
@@ -412,7 +412,7 @@
           <tr> 
             <td width="39%">Faks (örneğin: +1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="b_fax" value="{ $b_fax}">
+              <input type="text" name="b_fax" value="{$b_fax}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
