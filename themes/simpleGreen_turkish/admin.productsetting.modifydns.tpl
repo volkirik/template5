@@ -42,7 +42,7 @@
             <td height="20" width="30%" bgcolor="#E1ECFB"><b>Ürün Tipi</b></td>
             <td height="20" width="70%" bgcolor="#F2F8FD"> 
 
-{ if $product_type == 1}
+{if $product_type == 1}
      Alan Adı
 {elseif $product_type == 2}
 	Barındırma

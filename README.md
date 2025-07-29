@@ -4,3 +4,6 @@
 ### updated AdoDB
 ### fixed default (english) theme
 ### fixed default_turkish theme
+### fixed simpleGreen (english) theme
+### fixed simpleGreen_turkish theme
+
