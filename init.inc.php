@@ -3,7 +3,7 @@ require_once(dirname(__FILE__) . "/session.inc.php");
 @error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED);
 @ini_set("display_errors", false);
 @ini_set("log_errors", true);
-@ini_set("error_log", "/logs/error_log");
+@ini_set("error_log", realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "logs" . DIRECTORY_SEPARATOR ."error_log"));
 $conn = connectDB();
 
 $sql = "select * from web_config";
