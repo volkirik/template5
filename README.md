@@ -6,4 +6,4 @@
 ### fixed default_turkish theme
 ### fixed simpleGreen (english) theme
 ### fixed simpleGreen_turkish theme
-
+### change charset from iso to utf-8

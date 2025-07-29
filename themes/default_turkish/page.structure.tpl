@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>{$title|default:"Online NIC :: Varsayılan Tema"}</title>
 	<link href="{$RELA_DIR}/themes/{$CURRENT_THEME}/style.css" rel="stylesheet" type="text/css">
 </head>
