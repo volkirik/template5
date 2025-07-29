@@ -123,19 +123,19 @@
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Organization</td>
             <td width="70%" height="20"> 
-              <input type="text" name="r_org" value="{$r_org }">
+              <input type="text" name="r_org" value="{$r_org}">
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Address 1</td>
             <td width="70%" height="20"> 
-              <input type="text" name="r_address1" value="{$r_address1 }" size="30">
+              <input type="text" name="r_address1" value="{$r_address1}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Address 2</td>
             <td width="70%" height="20"> 
-              <input type="text" name="r_address2" value="{ $r_address2 }" size="30">
+              <input type="text" name="r_address2" value="{$r_address2}" size="30">
             </td>
           </tr>
           <tr> 
@@ -147,13 +147,13 @@
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">City</td>
             <td width="70%" height="20"> 
-              <input type="text" name="r_city" value="{ $r_city }">
+              <input type="text" name="r_city" value="{$r_city}">
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Province/State</td>
             <td width="70%" height="20"> 
-              <input type="text" name="r_province" value="{$r_province }">
+              <input type="text" name="r_province" value="{$r_province}">
             </td>
           </tr>
           <tr> 
@@ -175,25 +175,25 @@
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Postalcode</td>
             <td width="70%" height="20">
-              <input type="text" name="r_postalcode" value="{$r_postalcode }">
+              <input type="text" name="r_postalcode" value="{$r_postalcode}">
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Telephone</td>
             <td width="70%" height="20">
-              <input type="text" name="r_telephone" value="{ $r_telephone}">
+              <input type="text" name="r_telephone" value="{$r_telephone}">
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Fax</td>
             <td width="70%" height="20">
-              <input type="text" name="r_fax" value="{$r_fax }">
+              <input type="text" name="r_fax" value="{$r_fax}">
             </td>
           </tr>
           <tr>
             <td width="30%" height="20" bgcolor="#EFEFEF">E-mail</td>
             <td width="70%" height="20">
-              <input type="text" name="r_email" value="{$r_email }">
+              <input type="text" name="r_email" value="{$r_email}">
             </td>
           </tr>
         </table>
@@ -208,8 +208,8 @@
       <td width="70%" height="25"> 
         <input type="submit" name="Submit" value="Modify member info">
         <input type="hidden" name="action" value="modifyMemberInfo">
-        <input type="hidden" name="member_id" value="{$member_id }">
-        <input type="hidden" name="currentPage" value="{ $currentPage}">
+        <input type="hidden" name="member_id" value="{$member_id}">
+        <input type="hidden" name="currentPage" value="{$currentPage}">
       </td>
     </tr>
   </table>

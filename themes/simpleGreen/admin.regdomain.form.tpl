@@ -53,7 +53,7 @@
 	<input type="hidden" name="action" value="registerDomain">
 	<input type="hidden" name="domain" value="{$domain}">
 	<input type="hidden" name="gtld" value="{$gtld}">
-	<input type="hidden" name="member_name" value="{ $member_name}">
+	<input type="hidden" name="member_name" value="{$member_name}">
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
           <tr>
             <td width="25%">Domain name:</td>
@@ -114,13 +114,13 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Organization name</td>
             <td width="61%"> 
-              <input type="text" name="r_org" value="{ $r_org }">
+              <input type="text" name="r_org" value="{$r_org}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
             <td width="39%">Address 1</td>
             <td width="61%"> 
-              <input type="text" name="r_address1" value="{ $r_address1}" size="30">
+              <input type="text" name="r_address1" value="{$r_address1}" size="30">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -138,13 +138,13 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">City</td>
             <td width="61%"> 
-              <input type="text" name="r_city" value="{ $r_city }">
+              <input type="text" name="r_city" value="{$r_city}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Province/State</td>
             <td width="61%"> 
-              <input type="text" name="r_province" value="{ $r_province }">
+              <input type="text" name="r_province" value="{$r_province}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -164,25 +164,25 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Postal code</td>
             <td width="61%"> 
-              <input type="text" name="r_postalcode" value="{ $r_postalcode }">
+              <input type="text" name="r_postalcode" value="{$r_postalcode}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Telephone(eg:+1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="r_telephone" value="{$r_telephone }">
+              <input type="text" name="r_telephone" value="{$r_telephone}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Fax(eg:+1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="r_fax" value="{ $r_fax }">
+              <input type="text" name="r_fax" value="{$r_fax}">
               <font color="#990000">*</font></td>
           </tr>
           <tr>
             <td width="39%">E-mail</td>
             <td width="61%">
-              <input type="text" name="r_email" value="{$r_email }" size="30">
+              <input type="text" name="r_email" value="{$r_email}" size="30">
               <font color="#990000">*</font></td>
           </tr>
         </table>
@@ -193,7 +193,7 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Full name of administrator</td>
             <td width="61%"> 
-              <input type="text" name="administrator" value="{$administrator }">
+              <input type="text" name="administrator" value="{$administrator}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
@@ -205,31 +205,31 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Address 1</td>
             <td width="61%"> 
-              <input type="text" name="a_address1" value="{ $a_address1 }" size="30">
+              <input type="text" name="a_address1" value="{$a_address1}" size="30">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Address 2</td>
             <td width="61%"> 
-              <input type="text" name="a_address2" value="{ $a_address2 }" size="30">
+              <input type="text" name="a_address2" value="{$a_address2}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Address 3</td>
             <td width="61%"> 
-              <input type="text" name="a_address3" value="{ $a_address3}" size="30">
+              <input type="text" name="a_address3" value="{$a_address3}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">City</td>
             <td width="61%"> 
-              <input type="text" name="a_city" value="{ $a_city}">
+              <input type="text" name="a_city" value="{$a_city}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Province/State</td>
             <td width="61%"> 
-              <input type="text" name="a_province" value="{$a_province }">
+              <input type="text" name="a_province" value="{$a_province}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -248,25 +248,25 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Postal code</td>
             <td width="61%"> 
-              <input type="text" name="a_postalcode" value="{ $a_postalcode }">
+              <input type="text" name="a_postalcode" value="{$a_postalcode}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Telephone(eg:+1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="a_telephone" value="{ $a_telephone }">
+              <input type="text" name="a_telephone" value="{$a_telephone}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Fax(eg:+1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="a_fax" value="{ $a_fax }">
+              <input type="text" name="a_fax" value="{$a_fax}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">E-mail</td>
             <td width="61%"> 
-              <input type="text" name="a_email" value="{ $a_email }" size="30">
+              <input type="text" name="a_email" value="{$a_email}" size="30">
               <font color="#990000">*</font></td>
           </tr>
         </table>
@@ -281,43 +281,43 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Full name of technical contact</td>
             <td width="61%"> 
-              <input type="text" name="technical" value="{$technical }">
+              <input type="text" name="technical" value="{$technical}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
             <td width="39%">Organization name</td>
             <td width="61%"> 
-              <input type="text" name="t_org" value="{$t_org }">
+              <input type="text" name="t_org" value="{$t_org}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
             <td width="39%">Address 1</td>
             <td width="61%"> 
-              <input type="text" name="t_address1" value="{ $r_address1 }" size="30">
+              <input type="text" name="t_address1" value="{$r_address1}" size="30">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Address 2</td>
             <td width="61%"> 
-              <input type="text" name="t_address2" value="{ $t_address2}" size="30">
+              <input type="text" name="t_address2" value="{$t_address2}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Address 3</td>
             <td width="61%"> 
-              <input type="text" name="t_address3" value="{ $t_address3 }" size="30">
+              <input type="text" name="t_address3" value="{$t_address3}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">City</td>
             <td width="61%"> 
-              <input type="text" name="t_city" value="{ $t_city }">
+              <input type="text" name="t_city" value="{$t_city}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Province/State</td>
             <td width="61%"> 
-              <input type="text" name="t_province" value="{ $t_province }">
+              <input type="text" name="t_province" value="{$t_province}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -338,25 +338,25 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Postal code</td>
             <td width="61%"> 
-              <input type="text" name="t_postalcode" value="{ $t_postalcode }">
+              <input type="text" name="t_postalcode" value="{$t_postalcode}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Telephone(eg:+1.4156656387)</td>
             <td width="61%"> 
-              <input type="text" name="t_telephone" value="{ $t_telephone }">
+              <input type="text" name="t_telephone" value="{$t_telephone}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Fax(eg:+1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="t_fax" value="{ $t_fax }">
+              <input type="text" name="t_fax" value="{$t_fax}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">E-mail</td>
             <td width="61%"> 
-              <input type="text" name="t_email" value="{$t_email }" size="30">
+              <input type="text" name="t_email" value="{$t_email}" size="30">
               <font color="#990000">*</font></td>
           </tr>
         </table>
@@ -371,13 +371,13 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Full name of billing contact</td>
             <td width="61%"> 
-              <input type="text" name="billing" value="{ $billing }">
+              <input type="text" name="billing" value="{$billing}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
             <td width="39%">Organization name</td>
             <td width="61%"> 
-              <input type="text" name="b_org" value="{ $b_org }">
+              <input type="text" name="b_org" value="{$b_org}">
               <font color="#990000">*</font> </td>
           </tr>
           <tr> 
@@ -389,25 +389,25 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Address 2</td>
             <td width="61%"> 
-              <input type="text" name="b_address2" value="{ $b_address2 }" size="30">
+              <input type="text" name="b_address2" value="{$b_address2}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">Address 3</td>
             <td width="61%"> 
-              <input type="text" name="b_address3" value="{ $b_address3}" size="30">
+              <input type="text" name="b_address3" value="{$b_address3}" size="30">
             </td>
           </tr>
           <tr> 
             <td width="39%">City</td>
             <td width="61%"> 
-              <input type="text" name="b_city" value="{ $b_city }">
+              <input type="text" name="b_city" value="{$b_city}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">Province/State</td>
             <td width="61%"> 
-              <input type="text" name="b_province" value="{ $b_province }">
+              <input type="text" name="b_province" value="{$b_province}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -429,7 +429,7 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Postal code</td>
             <td width="61%"> 
-              <input type="text" name="b_postalcode" value="{ $b_postalcode}">
+              <input type="text" name="b_postalcode" value="{$b_postalcode}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
@@ -441,19 +441,19 @@ for($i = 1; $i < 11; $i ++)
           <tr> 
             <td width="39%">Fax(eg:+1.4156657168)</td>
             <td width="61%"> 
-              <input type="text" name="b_fax" value="{ $b_fax }">
+              <input type="text" name="b_fax" value="{$b_fax}">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td width="39%">E-mail</td>
             <td width="61%"> 
-              <input type="text" name="b_email" value="{ $b_email }" size="30">
+              <input type="text" name="b_email" value="{$b_email}" size="30">
               <font color="#990000">*</font></td>
           </tr>
           <tr> 
             <td colspan="2">
 
-{ if $product_info[3] == ".us"}
+{if $product_info[3] == ".us"}
 
 			<br>
               <b>NEXUS Information</b><br>

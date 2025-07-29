@@ -7,13 +7,13 @@
         <tr> 
           <td height="20" width="30%" bgcolor="#E1ECFB"><b>Account</b></td>
           <td height="20" width="70%" bgcolor="#F2F8FD"> <b>
-            { $member_info[1] }
+            {$member_info[1]}
             </b></td>
         </tr>
         <tr> 
           <td height="20" width="30%" bgcolor="#E1ECFB"><b>Level</b></td>
           <td height="20" width="70%" bgcolor="#F2F8FD"> <b>
-            { $member_info[4] }
+            {$member_info[4]}
             </b></td>
         </tr>
         <tr> 
@@ -41,7 +41,7 @@
 					{if $startYear == $iyr[yr]}
 						<option value= {$iyr[yr]} selected>{$iyr[yr]}
 					{else}
-						<option value= { $iyr[yr]} >  {$iyr[yr]}
+						<option value= {$iyr[yr]} >  {$iyr[yr]}
 					{/if}
 				{/section}
                     </select>
@@ -75,7 +75,7 @@
 				{if $toYear == $iyr[yr]}
 					<option value= {$iyr[yr]} selected>{$iyr[yr]}
 				{else}
-					<option value= { $iyr[yr]} >  {$iyr[yr]}
+					<option value= {$iyr[yr]} >  {$iyr[yr]}
 				{/if}
 			{/section}
                     </select>

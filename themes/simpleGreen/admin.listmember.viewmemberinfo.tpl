@@ -7,7 +7,7 @@
     <tr> 
       <td width="25%" height="25" colspan="2"> 
         <div style="border:solid 1px #FF0000;padding:5px"> <font class="p8"><b> 
-         { $message }
+         {$message}
           </b></font> </div>
       </td>
     </tr>
@@ -26,7 +26,7 @@
           </tr>
           <tr> 
             <td height="20" width="20%" bgcolor="#E1ECFB"><b>Username</b></td>
-            <td height="20" width="30%" bgcolor="#F2F8FD">{ $member_name}</td>
+            <td height="20" width="30%" bgcolor="#F2F8FD">{$member_name}</td>
             <td height="20" width="20%" bgcolor="#E1ECFB"><b>Account</b></td>
             <td height="20" width="30%" bgcolor="#F2F8FD">{$account}</td>
           </tr>
@@ -56,13 +56,13 @@
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Organization</td>
             <td width="70%" height="20"> 
-              { $r_org }
+              {$r_org}
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Address 1</td>
             <td width="70%" height="20"> 
-              { $r_address1}
+              {$r_address1}
             </td>
           </tr>
           <tr> 
@@ -80,25 +80,25 @@
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">City</td>
             <td width="70%" height="20"> 
-              { $r_city}
+              {$r_city}
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Province/State</td>
             <td width="70%" height="20"> 
-             { $r_province}
+             {$r_province}
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Country</td>
             <td width="70%" height="20"> 
-              { $r_country}
+              {$r_country}
             </td>
           </tr>
           <tr> 
             <td width="30%" height="20" bgcolor="#EFEFEF">Postalcode</td>
             <td width="70%" height="20">
-             { $r_postalcode}
+             {$r_postalcode}
             </td>
           </tr>
           <tr> 

@@ -8,7 +8,7 @@
 		{section name=ent loop=$entry}
 		 {if $entry[ent] == $current_skin}
           <option value="{$entry[ent]}" selected> 
-          { $entry[ent]}
+          {$entry[ent]}
           </option>
 	    {else}
           <option value="{$entry[ent]}"> 
@@ -87,7 +87,7 @@
     <tr> 
       <td width="32%" height="25" bgcolor="#E1ECFB">Server Host</td>
       <td width="68%" height="25" bgcolor="#F2F8FD">
-        <input type="text" name="server_host" value="{ $server_host}">
+        <input type="text" name="server_host" value="{$server_host}">
       </td>
     </tr>
     <tr>
@@ -103,7 +103,7 @@
 			{section name=ent loop=$themes}
 				{if $themes[ent] == $current_theme}
 					<option value="{$themes[ent]}" selected> 
-				    	{ $themes[ent]}
+				    	{$themes[ent]}
 					</option>
 				{else}
 					<option value="{$themes[ent]}"> 

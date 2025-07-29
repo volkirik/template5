@@ -35,7 +35,7 @@
 				{if $startYear == $iyr[yr]}
 					<option value= {$iyr[yr]} selected>{$iyr[yr]}
 				{else}
-					<option value= { $iyr[yr]} >  {$iyr[yr]}
+					<option value= {$iyr[yr]} >  {$iyr[yr]}
 				{/if}
 				{/section}
 					</select>
@@ -72,7 +72,7 @@
 				{if $toYear == $iyr[yr]}
 					<option value= {$iyr[yr]} selected>{$iyr[yr]}
 				{else}
-					<option value= { $iyr[yr]} >  {$iyr[yr]}
+					<option value= {$iyr[yr]} >  {$iyr[yr]}
 				{/if}
 			{/section}				  
     

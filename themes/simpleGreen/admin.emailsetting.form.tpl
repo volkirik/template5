@@ -7,7 +7,7 @@
 	    var selected_values = document.notification.mta.options[index].value;
 	    if (selected_values == 'smtp'){$smarty.ldelim}
 		    document.getElementById('test').style.display='';
-		{$smarty.rdelim}else{ $smarty.ldelim}
+		{$smarty.rdelim}else{$smarty.ldelim}
 		    document.getElementById('test').style.display='none';
        {$smarty.rdelim }
 	{$smarty.rdelim}

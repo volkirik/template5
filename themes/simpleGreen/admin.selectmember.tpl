@@ -7,7 +7,7 @@
       <form action="{$php_self}" method="post" style="margin:0px">
         <input type="hidden" name="action" value="showRegisterForm">
         <input type="hidden" name="domain" value="{$domain}">
-        <input type="hidden" name="gtld" value="{ $gtld}">
+        <input type="hidden" name="gtld" value="{$gtld}">
         <table width="95%" border="0" cellspacing="0" cellpadding="0">
           <tr> 
             <td height="30" bgcolor="#EFEFEF" align="center">User name: 
