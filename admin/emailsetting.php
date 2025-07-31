@@ -23,17 +23,10 @@ if ($admin->checkAdminTask ($admin_info[0], "Email settings") < 0)
 }
 
 $mail = new EmailSetting ();
-if (isset($_REQUEST["Submit"]) && strlen($_REQUEST["Submit"]) > 0) {
-	$action = $_REQUEST["action"];
-	$show   = $_REQUEST["show"];
-	$test_email = $_REQUEST["test_email"];
-	$type =$_REQUEST['type'];
-} else {
-	$action = "";
-	$show   = "";
-	$test_email = "";
-	$type = "";
-}
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
+$show   = isset($_REQUEST["show"]) ? $_REQUEST["show"] : '';
+$test_email = isset($_REQUEST["test_email"]) ? $_REQUEST["test_email"] : '';
+$type = isset($_REQUEST['type']) ? $_REQUEST['type'] : '';
 //echo "<pre>"; print_r ($_REQUEST); echo "</pre>";
   
 if ($action == "saveSettings")
