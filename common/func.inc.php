@@ -651,9 +651,9 @@ function showPageButton($currentPage, $pageCount, $totalRecord, $webaddress)
 	}
 	if(WEBSITE_LANGUAGE == 2)
 	{
-		$output .= $currentPage . "/" . $pageCount . "ҳ " . $totalRecord . "��";
+		$output .= $currentPage . "/" . $pageCount . " sayfalar toplam: " . $totalRecord . " kayıtlar";
 	}else {
-		$output .= $currentPage . "/" . $pageCount . "pages totals: " . $totalRecord . " records";
+		$output .= $currentPage . "/" . $pageCount . " pages totals: " . $totalRecord . " records";
 	}
 	
 	return $output;
