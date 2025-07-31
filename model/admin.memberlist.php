@@ -16,8 +16,9 @@ class MemberList
 
 		if($startYear == 0 || $startMonth == 0 || $startDay == 0 || $toYear == 0 || $toMonth == 0 || $toDay == 0)
 		{
-			$searchDate = 1;
+			$searchDate = 0;
 		}else {
+			$searchDate = 1;
 			if(DB_TYPE == "mysql")
 			{
 				$startDate	= $startYear . "-" . $startMonth . "-" . $startDay;
