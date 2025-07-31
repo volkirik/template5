@@ -19,7 +19,7 @@ if($admin->checkAdminTask($admin_info[0], "Member List") < 0)
 }
 
 $memberList = new MemberList();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 if($action == "listMember")
 {
 	$memberList->listMember("");

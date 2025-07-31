@@ -20,10 +20,7 @@ if($admin->checkAdminTask($admin_info[0], "System Control") < 0)
 }
 
 $systemControl = new SystemControl();
-$action = '';
-if (isset($_REQUEST["action"])) {
-	$action = $_REQUEST["action"];
-}
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 if($action == "showStatus")
 {
 	$systemControl->showStatus("");

@@ -19,7 +19,7 @@ if($admin->checkAdminTask($admin_info[0], "Domain Upgrade") < 0)
 }
 
 $product = new ProductUpdate ();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 if($action == "showNewDomain")
 {
 	$product->showNewDomain("");

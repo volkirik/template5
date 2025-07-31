@@ -20,7 +20,7 @@ if($admin->checkAdminTask($admin_info[0], "Dns Manage") < 0)
 }
 
 $domain = new DnsManage();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 
 if($action == "listDns")
 {  

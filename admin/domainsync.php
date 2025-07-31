@@ -23,7 +23,7 @@ if ($admin->checkAdminTask ($admin_info[0], "Domain Sync") < 0)
 }
 
 $domain = new DomainSync ();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 
 //echo "<pre>"; print_r ($_REQUEST); echo "</pre>";
 

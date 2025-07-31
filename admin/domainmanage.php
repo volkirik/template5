@@ -20,11 +20,7 @@ if($admin->checkAdminTask($admin_info[0], "Manage Domain") < 0)
 }
 
 $domain = new DomainManage();
-if (isset($_REQUEST["action"])){
-	$action = $_REQUEST["action"];
-} else {
-	$action ='';
-}
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 
 if($action == "listDomain")
 {

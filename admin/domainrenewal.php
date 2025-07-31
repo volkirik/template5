@@ -20,7 +20,7 @@ if($admin->checkAdminTask($admin_info[0], "Domain Renewal") < 0)
 }
 
 $domain = new DomainRenewal ();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 
 if($action == "listDomains"){
 	$domain->listDomains("");

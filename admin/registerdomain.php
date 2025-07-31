@@ -21,7 +21,7 @@ if($admin->checkAdminTask($admin_info[0], "Register Domain") < 0)
 }
 
 $domain = new DomainRegistration();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 
 if($action == "checkDomain")
 {

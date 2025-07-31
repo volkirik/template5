@@ -19,7 +19,7 @@ if($admin->checkAdminTask($admin_info[0], "Whois Search") < 0)
 }
 
 $whois = new Whois();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 
 if($action == "getWhois")
 {

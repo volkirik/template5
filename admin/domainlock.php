@@ -20,7 +20,7 @@ if($admin->checkAdminTask($admin_info[0], "Domain Lock") < 0)
 }
 
 $domain = new DomainLock ();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 
 if($action == "listDomains")
 {  

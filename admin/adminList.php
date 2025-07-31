@@ -19,10 +19,7 @@ if($admin->checkAdminTask($admin_info[0], "Admin List") < 0)
 }
 
 $adminManage = new AdminManage();
-$action = '';
-if (isset($_REQUEST["action"])) {
-	$action = $_REQUEST["action"];
-}
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 if($action == "listAdmin")
 {
 	$adminManage->listAdmin("");

@@ -20,10 +20,7 @@ if($admin->checkAdminTask($admin_info[0], "Domain Setting") < 0)
 }
 
 $productSetting = new ProductSetting();
-$action = '';
-if (isset($_REQUEST["action"])) {
-	$action = $_REQUEST["action"];
-}
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 if($action == "listProduct")
 {
 	$productSetting->listProduct("");

@@ -5,27 +5,15 @@ class FundsManage
 	{
 		global $conn, $smarty;
 
-		if(isset($_REQUEST["Submit"]) && $_REQUEST["Submit"] != ""){
-			$member_name	= StripSlashes($_REQUEST["member_name"]);
-			$transation	= StripSlashes($_REQUEST["transation"]);
-			$startYear	= intval($_REQUEST["startYear"]);
-			$startMonth	= intval($_REQUEST["startMonth"]);
-			$startDay	= intval($_REQUEST["startDay"]);
-			$toYear		= intval($_REQUEST["toYear"]);
-			$toMonth	= intval($_REQUEST["toMonth"]);
-			$toDay		= intval($_REQUEST["toDay"]);
-			$product_id	= intval($_REQUEST["product_id"]);
-		}else {
-			$member_name	= '';
-			$transation	= '';
-			$startYear	= 0;
-			$startMonth	= 0;
-			$startDay	= 0;
-			$toYear		= 0;
-			$toMonth	= 0;
-			$toDay		= 0;
-			$product_id	= 0;
-		}
+		$member_name	= isset($_REQUEST["member_name"]) ? StripSlashes($_REQUEST["member_name"]) : '';
+		$transation	= isset($_REQUEST["transation"]) ? StripSlashes($_REQUEST["transation"]): '';
+		$startYear	= isset($_REQUEST["startYear"]) ? intval($_REQUEST["startYear"]) : 0;
+		$startMonth	= isset($_REQUEST["startMonth"]) ? intval($_REQUEST["startMonth"]) : 0;
+		$startDay	= isset($_REQUEST["startDay"]) ? intval($_REQUEST["startDay"]) : 0;
+		$toYear		= isset($_REQUEST["toYear"]) ? intval($_REQUEST["toYear"]) : 0;
+		$toMonth	= isset($_REQUEST["toMonth"]) ? intval($_REQUEST["toMonth"]) : 0;
+		$toDay		= isset($_REQUEST["toDay"]) ? intval($_REQUEST["toDay"]) : 0;
+		$product_id	= isset($_REQUEST["product_id"]) ? intval($_REQUEST["product_id"]) : 0;
 		if($member_name == "" || strlen($member_name) > 20 || checkAlpha($member_name))
 		{
 			$myQuery = 0;
@@ -51,8 +39,9 @@ class FundsManage
 		
 		if($startYear == 0 || $startMonth == 0 || $startDay == 0 || $toYear == 0 || $toMonth == 0 || $toDay == 0)
 		{
-			$searchDate = 1;
+			$searchDate = 0;
 		}else {
+			$searchDate = 1;
 			if(DB_TYPE == "mysql")
 			{
 				$startDate	= $startYear . "-" . $startMonth . "-" . $startDay;

@@ -26,7 +26,7 @@
         
     $gw  =   new PaymentGateway ();
     
-    $action = $_REQUEST['action'];
+    $action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
     
     if ($action == 'showForm'){
         

@@ -5,7 +5,7 @@ class MemberUpdateContact
 	{
 		global $member_info;
 		
-		if($_REQUEST["Submit"] != "")
+		if(isset($_REQUEST["Submit"]) && $_REQUEST["Submit"] != "")
 		{
 			$r_name		= handleData($_REQUEST["r_name"]);
 			$r_org		= handleData($_REQUEST["r_org"]);

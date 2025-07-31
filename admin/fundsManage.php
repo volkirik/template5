@@ -19,7 +19,7 @@ if($admin->checkAdminTask($admin_info[0], "Funds Management") < 0)
 }
 
 $fundsManage = new FundsManage();
-$action = $_REQUEST["action"];
+$action = isset($_REQUEST["action"]) ? $_REQUEST["action"] : '';
 if($action == "showForm")
 {
 	$fundsManage->showForm("");
