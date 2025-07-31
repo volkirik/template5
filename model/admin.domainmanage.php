@@ -28,7 +28,9 @@ class DomainManage
 			$searchDate = 0;
 		}
 		
-		if ($startYear > 0 || $startMonth > 0 || $startDay > 0 || $toYear > 0 || $toMonth > 0 || $toDay > 0) {
+		if ($startYear == 0 || $startMonth == 0 || $startDay == 0 || $toYear == 0 || $toMonth == 0 || $toDay == 0) {
+			$searchDate = 0;
+		} else {
 			$searchDate = 1;
 			if(DB_TYPE == "mysql")
 			{
@@ -38,8 +40,6 @@ class DomainManage
 				$startDate	= $startMonth . "/" . $startDay . "/" . $startYear;
 				$toDate		= $toMonth . "/" . $toDay . "/" . $toYear;
 			}
-		} else {
-			$searchDate =0;
 		}
 
 		if(DB_TYPE == "mysql")
