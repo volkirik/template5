@@ -63,7 +63,7 @@ class DomainManage
 			//$sql .= " and product_type = " . $product_id;
             $sql .= " and domains.domain_name like '%".$product_id."' ";
 		}
-		if($searchDate <> 1)
+		if($searchDate == 1)
 		{
 			if(DB_TYPE == "mysql")
 			{

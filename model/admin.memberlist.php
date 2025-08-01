@@ -34,7 +34,7 @@ class MemberList
 		{
 			$sql .= " and member_name like '%" . handleSQLData($member_name) . "%'";
 		}
-		if($searchDate != 1)
+		if($searchDate == 1)
 		{
 			if(DB_TYPE == "mysql")
 			{

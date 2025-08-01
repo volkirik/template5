@@ -79,7 +79,7 @@ class MemberOrderList
 				 		" and a.member_id = " . $member_info[0] .
 					 	" and a.order_type in(" . $transation . ")";
 			}
-			if($searchDate <> 1)
+			if($searchDate == 1)
 			{
 				if(DB_TYPE == "mysql")
 				{
@@ -121,7 +121,7 @@ class MemberOrderList
 				 	where	member_id = " . $member_info[0] .
 					 	" and order_type in(" . $transation . ")";
 			}
-			if($searchDate <> 1)
+			if($searchDate == 1)
 			{
 				if(DB_TYPE == "mysql")
 				{
