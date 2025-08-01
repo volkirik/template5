@@ -10,13 +10,23 @@ if (!function_exists('split')) {
 }
 if (!function_exists('ereg')) {
     function ereg($pattern, $string, &$regs = null) {
-        // ereg case-sensitive idi, bunu preg_match'e uyarlıyoruz
-        $pattern = '/' . $pattern . '/'; //$pattern = '/' . preg_quote($pattern, '/') . '/';
-        
+        // Önce boş bir pattern ise, başarısız olsun
+        if (!is_string($pattern) || trim($pattern) === '') {
+            return false;
+        }
+
+        // Eğer pattern zaten '/' ile başlamıyorsa, sar
+        if (@preg_match($pattern, '') === false) {
+            // Modifier hatalarını önlemek için: delimiter olarak # kullanalım
+            $escaped = str_replace('#', '\#', $pattern);
+            $pattern = '#' . $escaped . '#';
+        }
+
         $result = preg_match($pattern, $string, $matches);
         if ($result && $regs !== null) {
             $regs = $matches;
         }
+
         return $result;
     }
 }
@@ -359,6 +369,7 @@ function connectRegServer(&$fp)
 //	echo REG_PORT;
 	//socket_set_blocking($fp, TRUE);
 	$i = 0;
+	$result="";
 	while(!feof($fp))
 	{	
 		$i ++;
