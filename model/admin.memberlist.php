@@ -5,14 +5,14 @@ class MemberList
 	{
 		global $conn, $smarty;
 		
-		$startYear	= intval($_REQUEST["startYear"]);
-		$startMonth	= intval($_REQUEST["startMonth"]);
-		$startDay	= intval($_REQUEST["startDay"]);
-		$toYear		= intval($_REQUEST["toYear"]);
-		$toMonth	= intval($_REQUEST["toMonth"]);
-		$toDay		= intval($_REQUEST["toDay"]);
-		$member_name	= StripSlashes($_REQUEST["member_name"]);
-		$orders		= intval($_REQUEST["orders"]);
+		$startYear	= isset($_REQUEST["startYear"]) ? intval($_REQUEST["startYear"]) : 0;
+		$startMonth	= isset($_REQUEST["startMonth"]) ? intval($_REQUEST["startMonth"]) : 0;
+		$startDay	= isset($_REQUEST["startDay"]) ? intval($_REQUEST["startDay"]) : 0;
+		$toYear		= isset($_REQUEST["toYear"]) ? intval($_REQUEST["toYear"]) : 0;
+		$toMonth	= isset($_REQUEST["toMonth"]) ? intval($_REQUEST["toMonth"]) : 0;
+		$toDay		= isset($_REQUEST["toDay"]) ? intval($_REQUEST["toDay"]) : 0;
+		$member_name	= isset($_REQUEST["member_name"]) ? StripSlashes($_REQUEST["member_name"]) : '';
+		$orders		= isset($_REQUEST["orders"]) ? intval($_REQUEST["orders"]) : 0;
 
 		if($startYear == 0 || $startMonth == 0 || $startDay == 0 || $toYear == 0 || $toMonth == 0 || $toDay == 0)
 		{

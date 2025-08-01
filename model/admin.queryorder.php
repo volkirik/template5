@@ -113,7 +113,7 @@ class FundsManage
 					 		and b.product_id = " . $product_id .
 					 		" and a.member_id = " . $member_info[0] .
 						 	" and a.order_type in(" . $transation . ")";
-					if($searchDate <> 1)
+					if($searchDate == 1)
 					{
 						$sql .= " and to_days(a.order_date) >= to_days('" . $startDate . "')" .
 						 	" and to_days(a.order_date) <= to_days( '" . $toDate . "')";
@@ -135,7 +135,7 @@ class FundsManage
 					 		and b.product_id = " . $product_id .
 					 		" and a.member_id = " . $member_info[0] .
 						 	" and a.order_type in(" . $transation . ")";
-					if($searchDate <> 1)
+					if($searchDate == 1)
 					{
 						$sql .= " and a.order_date > '" . $startDate . "'" .
 						 	" and a.order_date-1 < '" . $toDate . "'";
@@ -158,7 +158,7 @@ class FundsManage
 					 	from	orders
 					 	where	member_id = " . $member_info[0] .
 						 	" and order_type in(" . $transation . ")";
-					if($searchDate <> 1)
+					if($searchDate == 1)
 					{
 						$sql .= " and to_days(order_date) >= to_days('" . $startDate . "')" .
 						 	" and to_days(order_date) <= to_days('" . $toDate . "')";
@@ -177,7 +177,7 @@ class FundsManage
 					 	from	orders
 					 	where	member_id = " . $member_info[0] .
 						 	" and order_type in(" . $transation . ")";
-					if($searchDate <> 1)
+					if($searchDate == 1)
 					{
 						$sql .= " and order_date > '" . $startDate . "'" .
 						 	" and order_date-1 < '" . $toDate . "'";
