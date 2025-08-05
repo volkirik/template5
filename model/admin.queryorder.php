@@ -192,7 +192,7 @@ class FundsManage
 		{
 			showAdminErrorMsg($conn->ErrorMsg());
 		}
-		$currentPage = $_GET["currentPage"];
+		$currentPage = isset($_GET["currentPage"]) ? $_GET["currentPage"] : 1;
 		initPage($rs, PAGE_SIZE, $currentPage, $pageCount, $totalRecord);
 
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");

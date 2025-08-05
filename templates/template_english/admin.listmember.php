@@ -6,7 +6,7 @@ global $admin_info;
     $smarty->assign ('php_self', $_SERVER["PHP_SELF"]);
 
 	$iyear = array();			
-	for($i_year = 1970; $i_year <= date("Y"); $i_year ++)
+	for($i_year = 1970; $i_year <= intval(date("Y")); $i_year ++)
 	{   array_push ($iyear, $i_year);
 	}
 	$smarty->assign('startYear', $startYear);

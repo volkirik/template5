@@ -7,14 +7,14 @@ class MemberOrderList
 		global $member_info;
 		global $smarty;
 		
-		$transation	= $_REQUEST["transation"];
-		$startYear	= intval($_REQUEST["startYear"]);
-		$startMonth	= intval($_REQUEST["startMonth"]);
-		$startDay	= intval($_REQUEST["startDay"]);
-		$toYear		= intval($_REQUEST["toYear"]);
-		$toMonth	= intval($_REQUEST["toMonth"]);
-		$toDay		= intval($_REQUEST["toDay"]);
-		$product_id	= intval($_REQUEST["product_id"]);
+		$transation	= isset($_REQUEST["transation"]) ? $_REQUEST["transation"] : '';
+		$startYear	= isset($_REQUEST["startYear"]) ? intval($_REQUEST["startYear"]) : 0;
+		$startMonth	= isset($_REQUEST["startMonth"]) ? intval($_REQUEST["startMonth"]) : 0;
+		$startDay	= isset($_REQUEST["startDay"]) ? intval($_REQUEST["startDay"]) : 0;
+		$toYear		= isset($_REQUEST["toYear"]) ? intval($_REQUEST["toYear"]) : 0;
+		$toMonth	= isset($_REQUEST["toMonth"]) ? intval($_REQUEST["toMonth"]) : 0;
+		$toDay		= isset($_REQUEST["toDay"]) ? intval($_REQUEST["toDay"]) : 0;
+		$product_id	= isset($_REQUEST["product_id"]) ? intval($_REQUEST["product_id"]) : 0;
 		
 		if($startYear == 0 || $startMonth == 0 || $startDay == 0 || $toYear == 0 || $toMonth == 0 || $toDay == 0)
 		{
@@ -140,7 +140,7 @@ class MemberOrderList
 		{
 			showErrorMsg($conn->ErrorMsg());
 		}
-		$currentPage = $_GET["currentPage"];
+		$currentPage = isset($_GET["currentPage"]) ? $_GET["currentPage"] : 1;
 		initPage($rs, PAGE_SIZE, $currentPage, $pageCount, $totalRecord);
 		
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");

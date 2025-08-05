@@ -7,7 +7,7 @@ global $member_info;
 	$smarty->assign ('member_info',  $member_info);
 	
 	$iyr = array();
-	for($i_year = 1970; $i_year <= date("Y"); $i_year ++)
+	for($i_year = 1970; $i_year <= intval(date("Y")); $i_year ++)
 	array_push ($iyr, $i_year);
 	$smarty->assign ('iyr', $iyr);
 	$smarty->assign ('startYear', $startYear);
