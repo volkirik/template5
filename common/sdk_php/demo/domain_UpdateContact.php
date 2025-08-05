@@ -1,0 +1,62 @@
+<?php
+define("CAN_NOT_CONNECT_SERVER", "Can't connect to server");
+require("../ApiClient.php");
+
+$api = new ApiClient();
+$domainType = 2001;
+$domain     = 'ccb.bike';
+
+//login api
+$cmd = $api->buildCommand('client', 'Login');
+$rs  = $api->request($cmd);
+if ($rs) {
+	//something error happen
+	$lastResult = $api->getLastResult();
+	$error = getError(__LINE__, $rs, $lastResult);
+	die($error);
+}
+
+//UpdateContact
+$params = array(
+		'domaintype' => $domainType,
+		'domain'     => $domain,
+		'contacttype'=> 'registrant',//Contact type:registrant - registrant, admin - administrator, tech - technician, billing - billing contact
+		'name'       => 'demo name new',
+		'org'        => 'demo org new',
+		'country'    => 'US',
+		'province'   => 'demo province',
+		'city'       => 'demo city',
+		'street'     => 'demo street',
+		'postalcode' => '361000',
+		'voice'      => '+86.123456789',
+		'fax'        => '+86.123456789',
+		'email'      => 'demo@demo.com',
+);
+$cmd        = $api->buildCommand('domain', 'UpdateContact', $params);
+$rs         = $api->request($cmd);
+$lastResult = $api->getLastResult();
+if ($rs) {
+	$error = getError(__LINE__, $rs, $lastResult);
+	die($error);
+} else {
+	var_dump($lastResult);
+}
+
+//logout api
+$cmd = $api->buildCommand('client', 'Logout');
+$rs  = $api->request($cmd);
+
+function getError($line, $rs, $lastResult) {
+	switch($rs) {
+        case 1:
+            $error = CAN_NOT_CONNECT_SERVER;
+            break;
+        case 2:
+            $error = '[description]:' . $lastResult['msg'] . '[additional]:' . $lastResult['value'];
+            break;
+        default:
+            $error = 'unknow error';
+            break;
+    }
+	return "Line:".$line."|".$error."\n";
+}

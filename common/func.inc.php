@@ -16,9 +16,9 @@ if (!function_exists('ereg')) {
         }
 
         // Eğer pattern zaten '/' ile başlamıyorsa, sar
-        if (@preg_match($pattern, '') === false) {
+        if ($pattern[0] !== '/') { //if (@preg_match($pattern, '') === false) {
             // Modifier hatalarını önlemek için: delimiter olarak # kullanalım
-            $escaped = str_replace('#', '\#', $pattern);
+            $escaped = preg_replace('/(?<!\\\\)#/', '\\\\#', $pattern);
             $pattern = '#' . $escaped . '#';
         }
 
@@ -28,6 +28,7 @@ if (!function_exists('ereg')) {
         }
 
         return $result;
+        //var_dump($result);
     }
 }
 
