@@ -7,3 +7,4 @@
 ### fixed simpleGreen (english) theme
 ### fixed simpleGreen_turkish theme
 ### change charset from iso to utf-8
+### replace 2005 (year) with date("Y")
