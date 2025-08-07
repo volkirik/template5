@@ -7,7 +7,7 @@ $smarty->assign ('php_self', $_SERVER["PHP_SELF"]);
 
 
 	$iyr = array();			
-	for($i_year = 2002; $i_year < 2006; $i_year ++)
+	for($i_year = 1970; $i_year <= intval(date("Y")); $i_year ++)
 	{   array_push ($iyr, $i_year);
 	}
 	$smarty->assign('iyr', $iyr);

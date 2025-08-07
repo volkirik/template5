@@ -20,6 +20,22 @@ class MemberSignup
 			$r_telephone	= handleData($_REQUEST["r_telephone"]);
 			$r_fax			= handleData($_REQUEST["r_fax"]);
 			$r_email		= handleData($_REQUEST["r_email"]);
+		} else {
+			$member_name		= '';
+			$member_password1	= '';
+			$member_password2	= '';
+			$r_name			= '';
+			$r_org			= '';
+			$r_address1		= '';
+			$r_address2		= '';
+			$r_address3		= '';
+			$r_city			= '';
+			$r_province		= '';
+			$r_country		= '';
+			$r_postalcode		= '';
+			$r_telephone		= '';
+			$r_fax			= '';
+			$r_email		= '';
 		}
 		$countries = getCountryInfo();
 		//echo "showForm, session newsignup set:  ". $_SESSION['newsignup'];

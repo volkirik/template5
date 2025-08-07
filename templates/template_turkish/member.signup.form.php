@@ -11,9 +11,9 @@ $smarty->assign ('content_tip', 'Üyemiz olma yolunda hoş geldiniz!
 	$smarty->assign ('member_password2', $member_password2);
 	$smarty->assign ('r_name', $r_name);
 	$smarty->assign ('r_org', $r_org);
-	$smarty->assign ('$r_address1', $r_address1);
-	$smarty->assign ('$r_address2', $r_address2);
-	$smarty->assign ('$r_address3', $r_address3);
+	$smarty->assign ('r_address1', $r_address1);
+	$smarty->assign ('r_address2', $r_address2);
+	$smarty->assign ('r_address3', $r_address3);
 	$smarty->assign ('r_city', $r_city);
 	$smarty->assign ('r_province', $r_province);
 	$smarty->assign ('r_country', $r_country);
