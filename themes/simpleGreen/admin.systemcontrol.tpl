@@ -1,7 +1,7 @@
 <p>&nbsp;</p>
 <form action="{$content_action}" method="post">
   <table width="80%"  cellspacing="1" cellpadding="2" align="center"  style=" border-width: 1px; padding: 5px">
-   {* <tr> 
+    <tr> 
       <td width="32%" height="25" bgcolor="#E1ECFB">Website Skin</td>
       <td width="68%" height="25" bgcolor="#F2F8FD"> 
         <select name="current_skin">
@@ -18,7 +18,7 @@
     	{/section}
         </select>
       </td>
-    </tr> *}
+    </tr>
     <tr> 
       <td width="32%" height="25" bgcolor="#E1ECFB">Website Language</td>
       <td width="68%" height="25" bgcolor="#F2F8FD"> 
@@ -27,12 +27,12 @@
 {if $website_language == 1}
 
           <option value="1" selected>English</option>
-          <option value="2">Chinese</option>
+          <option value="2">Turkish</option>
           <?php
 {else}
 
           <option value="1">English</option>
-          <option value="2" selected>Chinese</option>
+          <option value="2" selected>Turkish</option>
 {/if}
         </select>
       </td>
