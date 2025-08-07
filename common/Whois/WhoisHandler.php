@@ -24,12 +24,15 @@ class WhoisHandler
 
             if ($whois->canLookup($this->tld)) {
                 $result = $whois->lookup(['sld' => $this->sld, 'tld' => $this->tld]);
+                //var_dump($result); exit; // for testing
                 if ($result['result'] == 'available' && !isset($result['whois'])) {
                     $this->whoisMessage = $domain . ' is available for registration.';
                     $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsaittir.';
                     $this->isAvailable = true;
                 } elseif (isset($result['whois'])) {
-                    $this->whoisMessage = $result['whois'];
+                    $this->whoisMessage = $domain . ' is unavailable for registration.';
+                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsait değildir.'."\n\n";
+                    $this->whoisMessage .= $result['whois'];
                     $this->isAvailable = false;
                 } else {
                     $this->whoisMessage = $domain . ' availability could not be checked for registration.';
