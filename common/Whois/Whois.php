@@ -182,8 +182,13 @@ class Whois
 
             return $results;
         }
-        $lookupResult = ' ---' . $lookupResult;
-        $results = [];
+        
+        if ($isSocketLookup) { 
+        	$lookupResult = '['.$uri.':'.$port.']'."\n\n" . $lookupResult;;
+        } else {
+        	$lookupResult = '['.$uri.']'."\n\n" . $lookupResult;;
+	}
+	$results = [];
         if (strpos(strtolower($lookupResult), strtolower($availableMatchString)) !== false) {
             $results['result'] = 'available';
         } else if ($premiumMatchString && strpos(strtolower($lookupResult), strtolower($premiumMatchString)) !== false) {
