@@ -472,4 +472,7 @@ pre {
 font-size: 12px;
   white-space: pre-wrap;
   word-wrap: break-word;
+      border: solid 1px #CCCCCC;
+    background-color: white;
+    padding: 10px;
   }

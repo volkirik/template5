@@ -320,7 +320,7 @@ function onlinenicWhois($domain)
 	$message = preg_replace('/<[^>]*>/', '', $message);
 
 	//var_dump($message); exit; //debug
-	return '<pre>'.$message.'</pre>';
+	return $message;
 
 	//$host		= "192.0.34.129"; 
 	$host		= "reports.internic.net";

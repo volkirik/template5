@@ -25,11 +25,17 @@ class WhoisHandler
             if ($whois->canLookup($this->tld)) {
                 $result = $whois->lookup(['sld' => $this->sld, 'tld' => $this->tld]);
                 //var_dump($result); exit; // for testing
-                if ($result['result'] == 'available' && !isset($result['whois'])) {
+                if ($result['result'] == 'available') {
                     $this->whoisMessage = $domain . ' is available for registration.';
-                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsaittir.';
+                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsaittir.'."\n\n";
+                    $this->whoisMessage .= $result['whois'];
                     $this->isAvailable = true;
-                } elseif (isset($result['whois'])) {
+                } elseif ($result['result'] == 'premium') {
+                    $this->whoisMessage = $domain . ' is available for registration (premium).';
+                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsaittir (premium).'."\n\n";
+                    $this->whoisMessage .= $result['whois'];
+                    $this->isAvailable = true;
+                } elseif ($result['result'] == 'unavailable') {
                     $this->whoisMessage = $domain . ' is unavailable for registration.';
                     $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsait değildir.'."\n\n";
                     $this->whoisMessage .= $result['whois'];

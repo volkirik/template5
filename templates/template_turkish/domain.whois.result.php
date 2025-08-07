@@ -5,6 +5,8 @@
 $smarty->assign ('content_title', 'Whois Sonucu');
 
 	$smarty->assign ('whois_result',$result);
+	$smarty->assign ('whois_result_availability',$avail_msg);
+	$smarty->assign ('whois_result_server',$whois_srv);
 	$smarty->assign ('content_header', CURRENT_THEME.'/content.header.tpl');
 	$smarty->assign ('content_body', CURRENT_THEME.'/domain.whois.result.tpl');
 

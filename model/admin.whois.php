@@ -51,8 +51,11 @@ class Whois
 		if($result < 0)
 		{
 			$this->showCheckForm("Error");
-		}else {
 		}
+		$parts = preg_split('/(\[[^\]]+\])/', $result, 3, PREG_SPLIT_DELIM_CAPTURE);
+		$avail_msg=$parts[0];
+		$whois_srv=$parts[1];
+		$result=$parts[2];
 	
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/domain.whois.result.php");

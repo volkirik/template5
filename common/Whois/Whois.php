@@ -195,13 +195,13 @@ class Whois
             $results['result'] = 'premium';
         } else {
             $results['result'] = 'unavailable';
-            if ($isSocketLookup) {
-                $results['whois'] = nl2br(htmlentities($lookupResult));
-            } else {
-                $results['whois'] = nl2br(
-                    htmlentities(strip_tags($lookupResult)),
-                );
-            }
+        }
+        if ($isSocketLookup) {
+            $results['whois'] = nl2br(htmlentities($lookupResult));
+        } else {
+            $results['whois'] = nl2br(
+                htmlentities(strip_tags($lookupResult)),
+            );
         }
 
         return $results;
