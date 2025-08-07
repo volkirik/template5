@@ -13,6 +13,7 @@ if(count($lines)>1){
 	$member_info = $member->checkLogin();
 
 	include("templates/" . CURRENT_SKIN . "/title.inc.php");
+	include("templates/" . CURRENT_SKIN . "/system.index.php");
 	include("templates/" . CURRENT_SKIN . "/tail.inc.php");
 
 	$smarty->display(CURRENT_THEME.'/page.structure.tpl');
