@@ -18,7 +18,7 @@
         border-right-width: 2px;
         border-right-style: solid;
         border-right-color: #B3D66E;
-        width: 532px;
+        width: 807px;
     }
     .rightTop {
         text-align: right;
@@ -109,6 +109,7 @@
         text-align: left;
         vertical-align: top;
         padding: 3px;
+        background-color: white;
     }
     .mainBody {
         font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -318,4 +319,11 @@
             }
 
 
-
+pre {
+font-size: 12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+      border: solid 1px #CCCCCC;
+    background-color: white;
+    padding: 10px;
+  }

@@ -4,7 +4,7 @@
 
 		  <tr>
             <TD colspan="2" class="pageInfo">
-               {$content_title}
+               <b>{$content_title}</b>
             </TD>
           </tr>
 	  {/if} 

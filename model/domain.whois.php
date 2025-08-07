@@ -57,6 +57,7 @@ class Whois
 		$result=$parts[2];
 		
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
+		$smarty->assign('PHP_SELF', $_SERVER['PHP_SELF']);
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/domain.whois.result.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
 		$smarty->display(CURRENT_THEME.'/page.structure.tpl');

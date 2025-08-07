@@ -7,15 +7,15 @@
 </head>
 
 <body BGCOLOR="#CCC3A6" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">
-    <table width="726" border="0" cellspacing="0" cellpadding="0" align="center">
+    <table width="1000" border="0" cellspacing="0" cellpadding="0" align="center">
         <tr>
             <td colspan="7" align="center">
                 {include file="$CURRENT_THEME/banner.tpl"}
             </td>
         </tr>
         <tr>
-            <td valign="top" align="left" width="30" style="background-color: #CAE299;">{include file="$CURRENT_THEME/left.menu.tpl"}</td>
-            <td class="mainTd" align="center" valign="top" width="75%">
+            <td valign="top" align="left" width="15%" style="background-color: #CAE299;">{include file="$CURRENT_THEME/left.menu.tpl"}</td>
+            <td class="mainTd" align="center" valign="top" width="85%">
                 {include file="$CURRENT_THEME/content.body.tpl"}
             </td>
         </tr>

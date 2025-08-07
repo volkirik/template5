@@ -1,5 +1,5 @@
 <br>
-	<table  border="0" align="center" cellpadding="0" cellspacing="0"  style="width: 520px;">
+	<table  border="0" align="center" cellpadding="0" cellspacing="0"  style="width: 775px;">
 	  <tr >
         <td>
             {if $content_header != ""}
