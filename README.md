@@ -9,3 +9,4 @@
 ### change charset from iso to utf-8
 ### replace 2002-2005 (first and last year in search forms) with 1970-date("Y")
 ### always show domain (un)availability messages in Whois
+### fix PHP whois function and directly query TLD registries
