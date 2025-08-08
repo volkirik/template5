@@ -32,6 +32,25 @@ if (!function_exists('ereg')) {
     }
 }
 
+if (!function_exists('ereg_replace')) {
+    function ereg_replace($pattern, $replacement, $string) {
+        // Boş veya geçersiz pattern kontrolü
+        if (!is_string($pattern) || trim($pattern) === '') {
+            return false;
+        }
+
+        // Eğer pattern '/' ile başlamıyorsa, uygun delimiter (#) ile sarmala
+        if ($pattern[0] !== '/') {
+            // '#' karakterini içerenleri kaçır
+            $escaped = preg_replace('/(?<!\\\\)#/', '\\\\#', $pattern);
+            $pattern = '#' . $escaped . '#';
+        }
+
+        // preg_replace ile dönüşüm yap
+        return preg_replace($pattern, $replacement, $string);
+    }
+}
+
 require_once ('Whois/WhoisHandler.php');
 require_once ('Whois/Whois.php');
 require_once ('Whois/Checker.php');
