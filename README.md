@@ -3,6 +3,7 @@
 ### updated Smarty engine
 ### updated AdoDB engine
 ### updated Whois engine
+### updated PHPMailer engine
 ### ereg and ereg_replace polyfills
 ### fixed default (english) theme
 ### fixed default_turkish theme
