@@ -65,7 +65,7 @@ $smarty->setCacheDir(ROOT_DIR.'/common/Smarty/smarty/cache');
 $smarty->addConfigDir(ROOT_DIR.'/common/Smarty/smarty/configs');
 
 if (RELA_DIR === "/") {
-	$smarty->assign ('RELA_DIR', '');
+	$smarty->assign ('RELA_DIR', '/./');
 } else {
 	$smarty->assign ('RELA_DIR', RELA_DIR);
 }

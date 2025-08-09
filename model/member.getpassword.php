@@ -16,8 +16,8 @@ class MemberGetPassword
 	{
 		global $conn;
 		
-		$username		= handleData($_REQUEST["username"]);
-		$email			= handleData($_REQUEST["email"]);
+		$username		= isset($_REQUEST["username"]) ? handleData($_REQUEST["username"]) : '';
+		$email			= isset($_REQUEST["email"]) ? handleData($_REQUEST["email"]) : '';
 		
 		if($username == ""
 			|| strlen($username) > 20

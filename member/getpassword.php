@@ -15,7 +15,7 @@ checkSystemStatus();
 $member = new MemberGetPassword();
 
 
-if($_POST["Submit"] != "")
+if(isset($_POST["Submit"]) && $_POST["Submit"] != "")
 {
 	$member->getPassword();
 }else {

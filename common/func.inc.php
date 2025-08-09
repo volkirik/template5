@@ -8,6 +8,11 @@ if (!function_exists('split')) {
         return $is_regex;
     }
 }
+if (!function_exists('gethostname')) {
+	function gethostname(){
+		return php_uname('n');
+	}
+}
 if (!function_exists('ereg')) {
     function ereg($pattern, $string, &$regs = null) {
         // Önce boş bir pattern ise, başarısız olsun
@@ -54,11 +59,19 @@ if (!function_exists('ereg_replace')) {
 require_once ('Whois/WhoisHandler.php');
 require_once ('Whois/Whois.php');
 require_once ('Whois/Checker.php');
-	
+
+require_once 'PHPMailer/src/Exception.php';
+require_once 'PHPMailer/src/PHPMailer.php';
+require_once 'PHPMailer/src/SMTP.php';
+
 use MonoVM\WhoisPhp\WhoisHandler;
 use MonoVM\WhoisPhp\Whois;
 use MonoVM\WhoisPhp\Checker;
-	
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
 /**************************************************************************************************/
 /*  Database operation										  */
 /**************************************************************************************************/
@@ -846,7 +859,7 @@ function showTip($msg)
 	}else{
 		$params['host'] = $rs->fields[8];
 		$params['port'] = $rs->fields[11];
-		$params['helo'] = exec ('hostname');
+		$params['helo'] = gethostname();
 		$params['user'] = $rs->fields[9];
 		$params['pass'] = $rs->fields[10];
 
@@ -864,10 +877,50 @@ function showTip($msg)
 		$send_params['from']		= $rs->fields[2];
 
 		$send_params['body']		= $body;
-	    if (is_object ($smtp = smtp::connect($params)) AND $smtp->send($send_params))
+		
+	    /*if (is_object ($smtp = smtp::connect($params)) AND $smtp->send($send_params))
 		    return 0;
 		else 
-		    return -1;
+		    return -1;*/
+		    //Create an instance; passing `true` enables exceptions
+$mail = new PHPMailer(false);
+		//try {
+    //Server settings
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->isSMTP();                                            //Send using SMTP
+    $mail->Host       = $params['host'];                     //Set the SMTP server to send through
+    $mail->SMTPAuth   = $params['auth'];                                   //Enable SMTP authentication
+    $mail->Username   = $params['user'];                     //SMTP username
+    $mail->Password   = $params['pass'];                               //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    //$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = $params['port'];                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+
+    //Recipients
+    $mail->setFrom($send_params['from'], $rs->fields[1]);
+    $mail->addAddress($email);     //Add a recipient
+    //$mail->addAddress('ellen@example.com');               //Name is optional
+    //$mail->addReplyTo('info@example.com', 'Information');
+    //$mail->addCC('cc@example.com');
+    //$mail->addBCC('bcc@example.com');
+
+    //Attachments
+    //$mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+
+    //Content
+    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->Subject = $subject;
+    $mail->Body    = '<pre>'.$send_params['body'].'</pre>';
+    $mail->AltBody = $send_params['body'];
+
+    if($mail->send()) {
+//    echo 'Message has been sent';
+	return 0;
+//} catch (Exception $e) {
+    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    } else { return -1; }
+//}
 	}
     
  } 
