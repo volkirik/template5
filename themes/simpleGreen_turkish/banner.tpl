@@ -1,7 +1,7 @@
 <table cellspacing=0 cellpadding=0 border=0 class="bannerBg">
     <tr>
         <TD width="7"><IMG SRC="images/design2_02.gif" WIDTH=7 HEIGHT=66 ALT=""></TD>
-		<TD width="177"><img src="{$RELA_DIR}/themes/{$CURRENT_THEME}/images/design2_03.gif" width=177 height=66 alt=""></TD>
+		<TD width="177"><img src="{$RELA_DIR}/themes/{$CURRENT_THEME}/images/../../../resource/logo.php?company={$WEBSITE_TITLE}" width=177 height=66 alt=""></TD>
 		<TD colspan="2" class="topMenuRight" align="right">
             <TABLE  BORDER=0 CELLPADDING=0 CELLSPACING=0 align="right">
                 <TR>
