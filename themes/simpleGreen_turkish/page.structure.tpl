@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{$title|default:"Online NIC :: Varsayılan Tema"}</title>
-    <link href="{$RELA_DIR}/themes/{$CURRENT_THEME}/style.css" rel="stylesheet" type="text/css">
+    <link href="{$RELA_DIR}themes/{$CURRENT_THEME}/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body BGCOLOR="#CCC3A6" LEFTMARGIN="0" TOPMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">

@@ -3,46 +3,30 @@ class MemberSignup
 {
 	function showForm($message)
 	{   global $smarty;
-		if($message)
+		if($message || isset($_REQUEST["Submit"]))
 		{
-			$member_name		= handleData($_REQUEST["member_name"]);
-			$member_password1	= handleData($_REQUEST["member_password1"]);
-			$member_password2	= handleData($_REQUEST["member_password2"]);
-			$r_name			= handleData($_REQUEST["r_name"]);
-			$r_org			= handleData($_REQUEST["r_org"]);
-			$r_address1		= handleData($_REQUEST["r_address1"]);
-			$r_address2		= handleData($_REQUEST["r_address2"]);
-			$r_address3		= handleData($_REQUEST["r_address3"]);
-			$r_city			= handleData($_REQUEST["r_city"]);
-			$r_province		= handleData($_REQUEST["r_province"]);
-			$r_country		= handleData($_REQUEST["r_country"]);
-			$r_postalcode	= handleData($_REQUEST["r_postalcode"]);
-			$r_telephone	= handleData($_REQUEST["r_telephone"]);
-			$r_fax			= handleData($_REQUEST["r_fax"]);
-			$r_email		= handleData($_REQUEST["r_email"]);
-		} else {
-			$member_name		= '';
-			$member_password1	= '';
-			$member_password2	= '';
-			$r_name			= '';
-			$r_org			= '';
-			$r_address1		= '';
-			$r_address2		= '';
-			$r_address3		= '';
-			$r_city			= '';
-			$r_province		= '';
-			$r_country		= '';
-			$r_postalcode		= '';
-			$r_telephone		= '';
-			$r_fax			= '';
-			$r_email		= '';
+			$member_name	= isset($_REQUEST["member_name"]) ? handleData($_REQUEST["member_name"]) : '';
+			$member_password1	= isset($_REQUEST["member_password1"]) ? handleData($_REQUEST["member_password1"]) : '';
+			$member_password2	= isset($_REQUEST["member_password2"]) ? handleData($_REQUEST["member_password2"]) : '';
+			$r_name		= isset($_REQUEST["r_name"]) ? handleData($_REQUEST["r_name"]) : '';
+			$r_org		= isset($_REQUEST["r_org"]) ? handleData($_REQUEST["r_org"]) : '';
+			$r_address1	= isset($_REQUEST["r_address1"]) ? handleData($_REQUEST["r_address1"]) : '';
+			$r_address2	= isset($_REQUEST["r_address2"]) ? handleData($_REQUEST["r_address2"]) : '';
+			$r_address3	= isset($_REQUEST["r_address3"]) ? handleData($_REQUEST["r_address3"]) : '';
+			$r_city		= isset($_REQUEST["r_city"]) ? handleData($_REQUEST["r_city"]) : '';
+			$r_province	= isset($_REQUEST["r_province"]) ? handleData($_REQUEST["r_province"]) : '';
+			$r_country	= isset($_REQUEST["r_country"]) ? handleData($_REQUEST["r_country"]) : '';
+			$r_postalcode	= isset($_REQUEST["r_postalcode"]) ? handleData($_REQUEST["r_postalcode"]) : '';
+			$r_telephone	= isset($_REQUEST["r_telephone"]) ? handleData($_REQUEST["r_telephone"]) : '';
+			$r_fax		= isset($_REQUEST["r_fax"]) ? handleData($_REQUEST["r_fax"]) : '';
+			$r_email	= isset($_REQUEST["r_email"]) ? handleData($_REQUEST["r_email"]) : '';
 		}
 		$countries = getCountryInfo();
 		//echo "showForm, session newsignup set:  ". $_SESSION['newsignup'];
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/member.signup.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
-		
+		$smarty->assign ('RELA_DIR', RELA_DIR);
 	    $smarty->display(CURRENT_THEME.'/page.structure.tpl');
 		
 		die();
@@ -67,6 +51,7 @@ class MemberSignup
 		$r_telephone		= handleData($_REQUEST["r_telephone"]);
 		$r_fax			= handleData($_REQUEST["r_fax"]);
 		$r_email		= handleData($_REQUEST["r_email"]);
+		$keystring 	= isset($_REQUEST["keystring"]) ? handleData($_REQUEST["keystring"]) : '';
 		
 		if($member_name == ""
 			|| strlen($member_name) > 20
@@ -138,7 +123,9 @@ class MemberSignup
 			|| checkMail($r_email)
 		)
 			$this->showForm(MEMBER_0014);
-		
+		if(!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring){
+			$this->showForm(ALL_0006);
+		}
 		$sql = "select * from members where member_name='" . handleSQLData($member_name) . "'";
 		$rs = $conn->Execute($sql);
 		if(!$rs)

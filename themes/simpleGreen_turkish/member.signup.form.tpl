@@ -112,6 +112,12 @@
         <font color="#FF0000">*</font> </td>
     </tr>
     <tr> 
+      <td width="25%"><img src="{$RELA_DIR}common/Captcha/displayCaptcha.php"></td>
+      <td width="75%">  Captcha giriniz;<br>
+              <input type="text" name="keystring">
+        <font color="#FF0000">*</font> </td>
+    </tr>
+    <tr> 
       <td width="25%" height="25">&nbsp;</td>
       <td width="75%" height="25">&nbsp;</td>
     </tr>

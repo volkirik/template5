@@ -6,6 +6,7 @@ class MemberLogin
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/member.login.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
+		$smarty->assign ('RELA_DIR', RELA_DIR);
 		$smarty->display(CURRENT_THEME.'/page.structure.tpl');
 		die();
 	}
@@ -15,8 +16,9 @@ class MemberLogin
 		global $conn;
 		global $member_info;
 		
-		$username	= handleData($_REQUEST["username"]);
-		$password	= handleData($_REQUEST["password"]);
+		$username	= isset($_REQUEST["username"]) ? handleData($_REQUEST["username"]) : '';
+		$password	= isset($_REQUEST["password"]) ? handleData($_REQUEST["password"]) : '';
+		$keystring 	= isset($_REQUEST["keystring"]) ? handleData($_REQUEST["keystring"]) : '';
 		
 		if($username == ""
 			|| strlen($username) > 20
@@ -28,6 +30,9 @@ class MemberLogin
 			|| checkAscii($password)
 		)
 			$this->showForm(MEMBER_0022);
+		if(!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring){
+			$this->showForm(ALL_0006);
+		}
 		
 		if(checkNumeric($username))
 		{

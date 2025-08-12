@@ -167,4 +167,5 @@ define("All_0002", "Ağ hatası");
 define("All_0003", "Yapılandırma dosyası hatası");
 define("ALL_0004", "Veri güncelleme hatası");
 define("ALL_0005", "Veri ekleme hatası");
+define("ALL_0006", "Captcha hatası");
 ?>

@@ -64,11 +64,7 @@ $smarty->setCompileDir(ROOT_DIR.'/common/Smarty/smarty/templates_c');
 $smarty->setCacheDir(ROOT_DIR.'/common/Smarty/smarty/cache');
 $smarty->addConfigDir(ROOT_DIR.'/common/Smarty/smarty/configs');
 
-if (RELA_DIR === "/") {
-	$smarty->assign ('RELA_DIR', '/./');
-} else {
-	$smarty->assign ('RELA_DIR', RELA_DIR);
-}
+$smarty->assign ('RELA_DIR', RELA_DIR);
 $smarty->assign ('ROOT_DIR', ROOT_DIR);
 $smarty->assign ('CURRENT_SKIN', CURRENT_SKIN);
 $smarty->assign ('CURRENT_THEME', CURRENT_THEME);

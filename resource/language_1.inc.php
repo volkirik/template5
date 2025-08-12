@@ -168,4 +168,6 @@ define("All_0002", "Network error");
 define("All_0003", "Config file error");
 define("ALL_0004", "Update data error");
 define("ALL_0005", "Insert data error");
+define("ALL_0006", "Captcha error");
+
 ?>

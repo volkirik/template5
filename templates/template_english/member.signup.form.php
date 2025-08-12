@@ -18,6 +18,10 @@
 	$smarty->assign ('r_province', $r_province);
 	$smarty->assign ('r_country', $r_country);
 	$smarty->assign ('countries', $countries);
+	$smarty->assign ('r_postalcode', $r_postalcode);
+	$smarty->assign ('r_telephone', $r_telephone);
+	$smarty->assign ('r_fax', $r_fax);
+	$smarty->assign ('r_email', $r_email);
 	
 	$smarty->assign ('content_header', CURRENT_THEME.'/content.header.tpl');
 	$smarty->assign ('content_body', CURRENT_THEME.'/member.signup.form.tpl');
