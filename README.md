@@ -3,7 +3,8 @@
 ### updated Smarty engine
 ### updated AdoDB engine
 ### updated Whois engine
-### updated PHPMailer engine
+### added up-to-date PHPMailer engine
+### added up-to-date Captcha engine
 ### ereg and ereg_replace polyfills
 ### fixed default (english) theme
 ### fixed default_turkish theme
@@ -14,3 +15,4 @@
 ### replace 2005-2040 (year range in payment forms) with date("Y")+15
 ### always show domain (un)availability messages in Whois
 ### fix PHP whois function and directly query TLD registries
+### fixed RELA_DIR variable in themes
