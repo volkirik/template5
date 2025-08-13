@@ -13,7 +13,15 @@
 			  {/section}
 			  </select>
             </td>
-            <td width="36%"> 
+            {if !isset($IS_ADMIN) || $IS_ADMIN == false}
+      <td width="20%"><img src="{$RELA_DIR}common/Captcha/displayCaptcha.php"></td>
+      <td width="20%"> Enter Captcha;<br>
+              <input type="text" name="keystring">
+        <font color="#FF0000">*</font> </td>
+            <td width="20%">
+         {else}
+            <td width="50%">
+         {/if}
               <input type="submit" name="Submit" value="Check">
               <input type="hidden" name="action" value="getWhois">
             </td>

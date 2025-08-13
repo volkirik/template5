@@ -11,7 +11,7 @@ class Whois
 		{
 			showErrorMsg($conn->ErrorMsg());
 		}
-		
+		$smarty->assign('RELA_DIR', RELA_DIR);
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/domain.whois.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
@@ -23,8 +23,9 @@ class Whois
 	{
 		global $conn, $smarty;
 		
-		$domain		= strtolower(handleData($_REQUEST["domain"]));
-		$gtld		= intval(handleData($_REQUEST["gtld"]));
+		$domain		= isset($_REQUEST["domain"]) ? strtolower(handleData($_REQUEST["domain"])) : '';
+		$gtld		= isset($_REQUEST["gtld"]) ? intval(handleData($_REQUEST["gtld"])) : '';
+		$keystring 	= isset($_REQUEST["keystring"]) ? handleData($_REQUEST["keystring"]) : '';
 		
 		if($gtld == 0)
 		{
@@ -43,6 +44,9 @@ class Whois
 		if($rs->RecordCount() != 1)
 		{
 			$this->showCheckForm(DOMAIN_0068);
+		}
+		if(!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring){
+			$this->showCheckForm(ALL_0006);
 		}
 		
 		$domain .= $rs->fields[3];

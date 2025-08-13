@@ -3,15 +3,15 @@ class Whois
 {
 	function showCheckForm($message)
 	{
-		global $conn, $smarty;
-		
+		global $conn, $smarty, $admin_info;
+		//var_dump($admin_info); exit; // debug purpose only!
 		$sql = "select * from products where flag = 0 and product_type = 1 order by id";
 		$rs = $conn->Execute($sql);
 		if(!$rs)
 		{
 			showAdminErrorMsg($conn->ErrorMsg());
 		}
-		
+		$smarty->assign('IS_ADMIN', true);
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/domain.whois.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.tail.inc.php");
