@@ -177,9 +177,9 @@ function doDelete()
 		{/if}
           </td>
           <td height="20" class="p8"{$rs[i][1]}>
-            <a href="{$php_self}?action=viewMemberInfo&currentPage={$currentPage}&member_id={$rs[i][0][0]}"><img src="{$RELA_DIR}/templates/{$CURRENT_SKIN}/images/view.jpg" border="0" alt="Üye Bilgilerini Görüntüle"></a>&nbsp;
-            <a href="{$php_self}?action=showModifyForm&currentPage={$currentPage}&member_id={$rs[i][0][0]}"><img src="{$RELA_DIR}/templates/{$CURRENT_SKIN}/images/modify.gif" border="0" alt="Üye Bilgilerini Düzenle"></a>&nbsp;
-            <a href="{$php_self}?action=deleteMember&currentPage={$currentPage}&member_id={$rs[i][0][0]}" onClick="return doDelete()"><img src="{$RELA_DIR}/templates/{$CURRENT_SKIN}/images/delete.gif" border="0" alt="Üyeyi Sil"></a>&nbsp;
+            <a href="{$php_self}?action=viewMemberInfo&currentPage={$currentPage}&member_id={$rs[i][0][0]}"><img src="{$RELA_DIR}templates/{$CURRENT_SKIN}/images/view.jpg" border="0" alt="Üye Bilgilerini Görüntüle"></a>&nbsp;
+            <a href="{$php_self}?action=showModifyForm&currentPage={$currentPage}&member_id={$rs[i][0][0]}"><img src="{$RELA_DIR}templates/{$CURRENT_SKIN}/images/modify.gif" border="0" alt="Üye Bilgilerini Düzenle"></a>&nbsp;
+            <a href="{$php_self}?action=deleteMember&currentPage={$currentPage}&member_id={$rs[i][0][0]}" onClick="return doDelete()"><img src="{$RELA_DIR}templates/{$CURRENT_SKIN}/images/delete.gif" border="0" alt="Üyeyi Sil"></a>&nbsp;
           </td>
         </tr>
     {/section}
@@ -191,7 +191,7 @@ function doDelete()
 {/if}
         </form>
 		<tr><td>&nbsp;</td></tr>
-        <form action="{$RELA_DIR}/admin/signup.php" method="post">
+        <form action="{$RELA_DIR}admin/signup.php" method="post">
 		<tr>
 		    <td colspan=6 align="center"><input type='submit' value="Yeni Üye Ekle">
 			</td>

@@ -24,6 +24,8 @@ global $admin_info, $smarty;
 	$smarty->assign ('r_postalcode', $r_postalcode);
 	$smarty->assign ('r_country', $r_country);
 	
+	$smarty->assign ('reg_time', $reg_time);
+
 	$arr = array();
 	while(!$rs->EOF)
 	{   array_push ($arr, array( $rs->fields[0], $rs->fields[1]));
