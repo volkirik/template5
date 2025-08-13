@@ -111,12 +111,14 @@
         <input type="text" name="r_email" maxlength="60" value="{$r_email}">
         <font color="#FF0000">*</font> </td>
     </tr>
+    {if !isset($IS_ADMIN) || $IS_ADMIN == false}
     <tr> 
       <td width="25%"><img src="{$RELA_DIR}common/Captcha/displayCaptcha.php"></td>
       <td width="75%">  Captcha giriniz;<br>
               <input type="text" name="keystring">
         <font color="#FF0000">*</font> </td>
     </tr>
+    {/if}
     <tr> 
       <td width="25%" height="25">&nbsp;</td>
       <td width="75%" height="25">&nbsp;</td>

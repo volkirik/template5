@@ -22,7 +22,7 @@ class MemberSignup
 			$r_email		= handleData($_REQUEST["r_email"]);
 		}
 		$countries = getCountryInfo();
-		
+		$smarty->assign('IS_ADMIN', true);
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/member.signup.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.tail.inc.php");
