@@ -73,8 +73,8 @@ class OSOLmulticaptcha{
 	var $imageFunction = "Adv";
 	var $font_size = 24;
 	var $font_ttf  = 'BookmanOldStyle.TTF';//'AdLibBT.TTF';
-	var $bgColor = "#039be5";//"#2c8007";
-	var $textColor = "#ffffff";
+	var $bgColor = "#8ECE13";//"#2c8007";
+	var $textColor = "#EAF3D6";
 	
 	var $symbolsToUse = "ABCDEFGHJKLMNPQRTWXY346789";//"234789acdeghklmnpqrwxyz";
 	var $fluctuation_amplitude = 4;
