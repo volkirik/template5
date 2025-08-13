@@ -23,7 +23,13 @@
         </td>
         <td valign="top">
             <div><h1 style="color: #F0A82A;">3</h1></div>
-            <div style="width: 40px;" align="center"><br>
+            <div style="width: 140px;" align="center"><br>
+            {if !isset($IS_ADMIN) || $IS_ADMIN == false}
+      <img src="{$RELA_DIR}common/Captcha/displayCaptcha.php">
+      <br>Captcha giriniz;<br>
+              <input type="text" name="keystring">
+        <font color="#FF0000">*</font><br>
+        {/if}
                 <input type=submit name="Search" value="Ara">
                 <input type=hidden name="action" value="checkDomains">
             </div>

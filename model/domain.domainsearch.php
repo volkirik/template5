@@ -14,11 +14,13 @@ class RegisterDomain
        unset ($_SESSION['regdomains']);
    
        $user_info = $currentuser->checkAdminLogin();
-        if($user_info == -1)
+        if($user_info == -1) {
             include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
-        else
+            $smarty->assign('RELA_DIR', RELA_DIR);
+        } else {
             include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
-
+            $smarty->assign('IS_ADMIN', true);
+	}
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/domain.searchdomains.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.tail.inc.php");
 		$smarty->display(CURRENT_THEME.'/page.structure.tpl');
@@ -27,6 +29,8 @@ class RegisterDomain
 
     function checkDomain(){
        global $conn, $smarty, $currentuser;
+       
+        $user_info = $currentuser->checkAdminLogin();
 //	print_r($_REQUEST);       
        $domains = array();
        $domains = split ("[\n,]", $_REQUEST['domains_list']);
@@ -38,7 +42,7 @@ class RegisterDomain
        $gtlds = $_REQUEST['gtlds'];
 //	echo "<br> test " .$gtlds;
 //	echo "<br> test domains ";print_r($domains);
-       
+       $keystring = isset($_REQUEST['keystring']) ? $_REQUEST["keystring"] : '';
        if($gtlds == 0)
 		{
 			$this->showCheckForm(DOMAIN_0068);
@@ -47,7 +51,9 @@ class RegisterDomain
 		{
 			$this->showCheckForm(DOMAIN_0069);
 		}
-
+		if($user_info == -1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
+			$this->showCheckForm(ALL_0006);
+		}
        $sql = "select product_id, domain_type, product_name from products where flag = 0 and product_type = 1";
 		$rs = $conn->Execute ($sql);
        $search_res = array();
@@ -105,7 +111,6 @@ class RegisterDomain
 		if(!$rs)
 			flagErrorMsg($conn->ErrorMsg());
         
-        $user_info = $currentuser->checkAdminLogin();
         if($user_info == -1)
             include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
         else

@@ -16,3 +16,4 @@
 ### always show domain (un)availability messages in Whois
 ### fix PHP whois function and directly query TLD registries
 ### fixed RELA_DIR variable in themes
+### show Captcha in public forms (login,register,forgot,whois,domain)
