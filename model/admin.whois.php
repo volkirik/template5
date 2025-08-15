@@ -12,6 +12,7 @@ class Whois
 			showAdminErrorMsg($conn->ErrorMsg());
 		}
 		$smarty->assign('IS_ADMIN', true);
+		$smarty->assign('CAPTCHA_ENABLE', CAPTCHA_ENABLE);
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/domain.whois.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.tail.inc.php");

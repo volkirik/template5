@@ -15,12 +15,14 @@
               <input type="text" name="email" value="{$content_email}">
           </td>
         </tr>
+        {if isset($CAPTCHA_ENABLE) && $CAPTCHA_ENABLE===1 }
         <tr> 
           <td align="right" width="40%"><img src="{$RELA_DIR}common/Captcha/displayCaptcha.php"></td>
           <td width="60%"> Enter Captcha;<br>
               <input type="text" name="keystring">
           </td>
         </tr>
+        {/if}
         <tr> 
           <td align="right" width="40%">&nbsp;</td>
           <td width="60%">&nbsp;</td>

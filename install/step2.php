@@ -132,17 +132,17 @@ if($website_language == 1)
 {
 ?>
                       <option value="1" selected>English</option>
-                      <option value="2">Chinese</option>
+                      <option value="2">Turkish</option>
                       <?php
 }else if($website_language == 2) {
 ?>
                       <option value="1">English</option>
-                      <option value="2" selected>Chinese</option>
+                      <option value="2" selected>Turkish</option>
                       <?php
 }else {
 ?>
                       <option value="1" selected>English</option>
-                      <option value="2">Chinese</option>
+                      <option value="2">Turkish</option>
                       <?php
 }
 ?>

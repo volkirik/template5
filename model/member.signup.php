@@ -27,6 +27,7 @@ class MemberSignup
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/member.signup.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
 		$smarty->assign ('RELA_DIR', RELA_DIR);
+		$smarty->assign ('CAPTCHA_ENABLE', CAPTCHA_ENABLE);
 	    $smarty->display(CURRENT_THEME.'/page.structure.tpl');
 		
 		die();
@@ -123,7 +124,7 @@ class MemberSignup
 			|| checkMail($r_email)
 		)
 			$this->showForm(MEMBER_0014);
-		if(!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring){
+		if(CAPTCHA_ENABLE===1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
 			$this->showForm(ALL_0006);
 		}
 		$sql = "select * from members where member_name='" . handleSQLData($member_name) . "'";

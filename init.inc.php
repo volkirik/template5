@@ -18,39 +18,40 @@ if(!$rs)
  * Skin Define
  */
 // var_dump($rs);exit; // debug code
-define("CURRENT_SKIN", $rs->fields[0]);
+define("CURRENT_SKIN", $rs->fields["current_skin"]);
 
 /**
  * Website Base Define
  */
-define("WEBSITE_LANGUAGE", $rs->fields[1]);
-define("TITLE", $rs->fields[2]);
-define("COPYRIGHT", $rs->fields[3]);
-define("PAGE_SIZE", $rs->fields[4]);
+define("WEBSITE_LANGUAGE", $rs->fields["website_language"]);
+define("TITLE", $rs->fields["title"]);
+define("COPYRIGHT", $rs->fields["copyright"]);
+define("PAGE_SIZE", $rs->fields["pagesize"]);
 
 /**
  * Website Control
  */
-define("SYSTEM_STATUS", $rs->fields[5]);
+define("SYSTEM_STATUS", $rs->fields["system_status"]);
 
 /**
  * OnlineNIC API Setting
  */
-define("CUSTOMER_ID", $rs->fields[7]);
-define("PASSWORD", $rs->fields[8]);
-define("REG_HOST", $rs->fields[9]);
-define("REG_PORT", $rs->fields[10]);
+define("CUSTOMER_ID", $rs->fields["customer_id"]);
+define("PASSWORD", $rs->fields["password"]);
+define("REG_HOST", $rs->fields["reg_host"]);
+define("REG_PORT", $rs->fields["reg_port"]);
 
 /**
  * Other setting
  */
-define("RELA_DIR", $rs->fields[11]);
-define("DOM_UPG_HOST", $rs->fields[12]);
-define("DOM_UPG_PORT", $rs->fields[13]);
-define("DOM_UPG_URL", $rs->fields[14]);
-define("SUPPORT_EMAIL", $rs->fields[15]);
+define("RELA_DIR", $rs->fields["rela_dir"]);
+define("DOM_UPG_HOST", $rs->fields["dom_upg_host"]);
+define("DOM_UPG_PORT", $rs->fields["dom_upg_port"]);
+define("DOM_UPG_URL", $rs->fields["dom_upg_url"]);
+define("SUPPORT_EMAIL", $rs->fields["support_email"]);
 //define("CURRENT_THEME", "default");
-define("CURRENT_THEME", $rs->fields[16]);
+define("CURRENT_THEME", $rs->fields["current_theme"]);
+define("CAPTCHA_ENABLE", intval($rs->fields["captcha_enable"]));
 
 $rs->close();
 

@@ -126,6 +126,12 @@
 		    <input type="checkbox" name="domain_renew" value="Enabled" {$domain_renew}>
 		</td>
 	</tr>
+    <tr>
+	    <td class=cellBg>CAPTCHA Etkinleştir</td>
+	    <td class=cellBg2>
+		    <input type="checkbox" name="captcha_enable" value="Enabled" {$captcha_enable}>
+		</td>
+	</tr>
   </table>
   <br>
   <br>

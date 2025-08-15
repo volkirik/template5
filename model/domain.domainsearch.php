@@ -14,9 +14,10 @@ class RegisterDomain
        unset ($_SESSION['regdomains']);
    
        $user_info = $currentuser->checkAdminLogin();
+       $smarty->assign('RELA_DIR', RELA_DIR);
+       $smarty->assign('CAPTCHA_ENABLE', CAPTCHA_ENABLE);
         if($user_info == -1) {
             include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
-            $smarty->assign('RELA_DIR', RELA_DIR);
         } else {
             include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
             $smarty->assign('IS_ADMIN', true);
@@ -51,7 +52,7 @@ class RegisterDomain
 		{
 			$this->showCheckForm(DOMAIN_0069);
 		}
-		if($user_info == -1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
+		if(CAPTCHA_ENABLE===1 && $user_info == -1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
 			$this->showCheckForm(ALL_0006);
 		}
        $sql = "select product_id, domain_type, product_name from products where flag = 0 and product_type = 1";

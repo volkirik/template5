@@ -13,7 +13,7 @@
 			  {/section}
 			  </select>
             </td>
-            {if !isset($IS_ADMIN) || $IS_ADMIN == false}
+            {if $CAPTCHA_ENABLE == 1 && (!isset($IS_ADMIN) || $IS_ADMIN == false) }
       <td width="20%"><img src="{$RELA_DIR}common/Captcha/displayCaptcha.php"></td>
       <td width="20%"> Enter Captcha;<br>
               <input type="text" name="keystring">

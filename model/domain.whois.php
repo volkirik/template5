@@ -12,6 +12,7 @@ class Whois
 			showErrorMsg($conn->ErrorMsg());
 		}
 		$smarty->assign('RELA_DIR', RELA_DIR);
+		$smarty->assign('CAPTCHA_ENABLE', CAPTCHA_ENABLE);
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/domain.whois.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
@@ -45,7 +46,7 @@ class Whois
 		{
 			$this->showCheckForm(DOMAIN_0068);
 		}
-		if(!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring){
+		if(CAPTCHA_ENABLE===1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
 			$this->showCheckForm(ALL_0006);
 		}
 		

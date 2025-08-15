@@ -7,6 +7,7 @@ class MemberLogin
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/member.login.form.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/tail.inc.php");
 		$smarty->assign ('RELA_DIR', RELA_DIR);
+		$smarty->assign ('CAPTCHA_ENABLE', CAPTCHA_ENABLE);
 		$smarty->display(CURRENT_THEME.'/page.structure.tpl');
 		die();
 	}
@@ -30,7 +31,7 @@ class MemberLogin
 			|| checkAscii($password)
 		)
 			$this->showForm(MEMBER_0022);
-		if(!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring){
+		if ( CAPTCHA_ENABLE ===1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
 			$this->showForm(ALL_0006);
 		}
 		

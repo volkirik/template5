@@ -17,6 +17,7 @@ global $smarty;
 	$smarty->assign ('current_theme', $current_theme);
     $smarty->assign ('domain_lock', $domain_lock);
     $smarty->assign ('domain_renew', $domain_renew);
+    $smarty->assign ('captcha_enable', $captcha_enable);
 	
 $arr = array();
 $d = dir("../templates");

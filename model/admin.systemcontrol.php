@@ -33,6 +33,11 @@ class SystemControl
 		else
 		     $domain_renew       = '';
 			 
+        if ($rs->fields["captcha_enable"] == 1)
+		    $captcha_enable        = 'checked';
+		else
+		     $captcha_enable       = '';
+
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.systemcontrol.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.tail.inc.php");
@@ -59,6 +64,7 @@ class SystemControl
 		$current_theme      = handleData($_REQUEST["current_theme"]);
 		$lock_status        = handleData($_REQUEST["domain_lock"]);
         $renew_status        = handleData($_REQUEST["domain_renew"]);
+        $captcha_status        = handleData($_REQUEST["captcha_enable"]);
 		
 		if($website_language != 1 && $website_language != 2)
 		{
@@ -147,6 +153,11 @@ class SystemControl
 		else 
 		    $domain_renew = 0;
 		
+        if ($captcha_status == 'Enabled')
+		    $captcha_enable = 1;
+		else 
+		    $captcha_enable = 0;
+		
 		if($customer_password != "")
 		{
 			$customer_password	= md5($customer_password);
@@ -163,7 +174,8 @@ class SystemControl
 					reg_port = " . $server_port.",
 					current_theme = '". $current_theme."',
 					domain_lock     =   ".$domain_lock.",
-                    domain_renewal     =   ".$domain_renew;
+                    domain_renewal     =   ".$domain_renew.",
+                    captcha_enable     =   ".$captcha_enable;
 		}else {
 			$sql = "update web_config set
 					current_skin = '" . $current_skin . "',
@@ -177,7 +189,8 @@ class SystemControl
 					reg_port = " . $server_port.",
 					current_theme = '". $current_theme."',
 					domain_lock     =   ".$domain_lock.",
-                    domain_renewal     =   ".$domain_renew;
+                    domain_renewal     =   ".$domain_renew.",
+                    captcha_enable     =   ".$captcha_enable;
 		}
 		$rs = $conn->Execute($sql);
 		if(!$rs)
