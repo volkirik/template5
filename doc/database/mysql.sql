@@ -209,7 +209,8 @@ CREATE TABLE if not exists web_config (
   support_email varchar(100) default NULL,
   current_theme varchar(50) default 'default',
   domain_lock int(2) default '1',
-  domain_renewal int(2) default '1'
+  domain_renewal int(2) default '1',
+  captcha_enable int(2) default '1'
 );
 /*==============================================================*/
 /* Table: domains                                               */

@@ -256,7 +256,11 @@ create table web_config (
 	dom_upg_host		varchar(50),
 	dom_upg_port		int,
 	dom_upg_url		varchar(50),
-	support_email		varchar(100)
+	support_email		varchar(100),
+	current_theme 		varchar(50),
+	domain_lock 		int,
+	domain_renewal 		int,
+	captcha_enable 		int
 );
 
 /*==============================================================*/
