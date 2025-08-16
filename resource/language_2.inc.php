@@ -174,4 +174,5 @@ define("WHOIS_0002", "Alan adı kayıt için müsaittir (premium)");
 define("WHOIS_0003", "Alan adı kayıt için müsait değildir.");
 define("WHOIS_0004", "Alan adı kayıt için kontrol edilemedi.");
 define("WHOIS_0005", "Alan adı için whois bilgi sorgulaması yapılamadı.");
+define("WHOIS_0006", "Yeni sorgu");
 ?>

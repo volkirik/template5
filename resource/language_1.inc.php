@@ -175,4 +175,5 @@ define("WHOIS_0002", "Domain is available for registration (premium).");
 define("WHOIS_0003", "Domain is unavailable for registration.");
 define("WHOIS_0004", "Domain availability could not be checked for registration.");
 define("WHOIS_0005", "Unable to lookup whois information for domain.");
+define("WHOIS_0006", "New query");
 ?>
