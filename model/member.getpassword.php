@@ -33,6 +33,10 @@ class MemberGetPassword
 		if(CAPTCHA_ENABLE===1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
 			$this->showForm(ALL_0006);
 		}
+		if(CAPTCHA_ENABLE===1 && isset($_SESSION['OSOLmulticaptcha_keystring'])){
+			unset($_SESSION['OSOLmulticaptcha_keystring']);
+		}
+
 		$sql = "select	*
 			from	members
 			where	member_name	= '" . handleSQLData($username) . "' and

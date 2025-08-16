@@ -49,7 +49,9 @@ class Whois
 		if(CAPTCHA_ENABLE===1 && (!isset($_SESSION['OSOLmulticaptcha_keystring']) || $_SESSION['OSOLmulticaptcha_keystring'] !== $keystring)){
 			$this->showCheckForm(ALL_0006);
 		}
-		
+		if(CAPTCHA_ENABLE===1 && isset($_SESSION['OSOLmulticaptcha_keystring'])){
+			unset($_SESSION['OSOLmulticaptcha_keystring']);
+		}
 		$domain .= $rs->fields[3];
 		$result = onlinenicWhois($domain);
 		if($result < 0)
