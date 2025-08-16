@@ -170,4 +170,9 @@ define("ALL_0004", "Update data error");
 define("ALL_0005", "Insert data error");
 define("ALL_0006", "Captcha error");
 
+define("WHOIS_0001", "Domain is available for registration.");
+define("WHOIS_0002", "Domain is available for registration (premium).");
+define("WHOIS_0003", "Domain is unavailable for registration.");
+define("WHOIS_0004", "Domain availability could not be checked for registration.");
+define("WHOIS_0005", "Unable to lookup whois information for domain.");
 ?>

@@ -168,4 +168,10 @@ define("All_0003", "Yapılandırma dosyası hatası");
 define("ALL_0004", "Veri güncelleme hatası");
 define("ALL_0005", "Veri ekleme hatası");
 define("ALL_0006", "Captcha hatası");
+
+define("WHOIS_0001", "Alan adı kayıt için müsaittir.");
+define("WHOIS_0002", "Alan adı kayıt için müsaittir (premium)");
+define("WHOIS_0003", "Alan adı kayıt için müsait değildir.");
+define("WHOIS_0004", "Alan adı kayıt için kontrol edilemedi.");
+define("WHOIS_0005", "Alan adı için whois bilgi sorgulaması yapılamadı.");
 ?>

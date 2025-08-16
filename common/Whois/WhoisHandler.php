@@ -26,28 +26,23 @@ class WhoisHandler
                 $result = $whois->lookup(['sld' => $this->sld, 'tld' => $this->tld]);
                 //var_dump($result); exit; // for testing
                 if ($result['result'] == 'available') {
-                    $this->whoisMessage = $domain . ' is available for registration.';
-                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsaittir.'."\n\n";
+                    $this->whoisMessage = $domain . ' - ' . constant('WHOIS_0001');
                     $this->whoisMessage .= $result['whois'];
                     $this->isAvailable = true;
                 } elseif ($result['result'] == 'premium') {
-                    $this->whoisMessage = $domain . ' is available for registration (premium).';
-                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsaittir (premium).'."\n\n";
+                    $this->whoisMessage = $domain . ' - ' . constant('WHOIS_0002');
                     $this->whoisMessage .= $result['whois'];
                     $this->isAvailable = true;
                 } elseif ($result['result'] == 'unavailable') {
-                    $this->whoisMessage = $domain . ' is unavailable for registration.';
-                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için müsait değildir.'."\n\n";
+                    $this->whoisMessage = $domain . ' - ' . constant('WHOIS_0003');
                     $this->whoisMessage .= $result['whois'];
                     $this->isAvailable = false;
                 } else {
-                    $this->whoisMessage = $domain . ' availability could not be checked for registration.';
-                    $this->whoisMessage .= "\n\n". $domain . ' alan adı kayıt için kontrol edilemedi.';
+                    $this->whoisMessage = $domain . ' - ' . constant('WHOIS_0004');
                     $this->isAvailable = false;
                 }
             } else {
-                $this->whoisMessage = 'Unable to lookup whois information for ' . $domain;
-                $this->whoisMessage .= "\n\n".$domain.' alan adı için whois bilgi sorgulaması yapılamadı.';
+                $this->whoisMessage = $domain . ' - ' . constant('WHOIS_0005');
                 $this->isValid = false;
             }
         }
