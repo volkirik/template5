@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS web_config;
 CREATE TABLE  web_config (
-  current_skin varchar(50) default 'template_english',
+  current_skin varchar(50) default 'template_generic',
   website_language int(11) default '1',
   title varchar(200) default NULL,
   copyright varchar(200) default NULL,
