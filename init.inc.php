@@ -14,6 +14,8 @@ if(!$rs)
 	die();
 }
 
+$php_self=$_SERVER["PHP_SELF"];
+
 /**
  * Skin Define
  */
