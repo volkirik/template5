@@ -7,8 +7,8 @@
 	$smarty->assign ('content_warning', $message);
 
 	$smarty->assign ('content_action', RELA_DIR.'member/getpassword.php');
-    $smarty->assign ('content_user',  StripSlashes($_POST["username"]));
-	$smarty->assign ('content_email', StripSlashes($_POST["email"]));
+    $smarty->assign ('content_user', isset($_POST["username"]) ? StripSlashes($_POST["username"]) : '');
+	$smarty->assign ('content_email', isset($_POST["email"]) ? StripSlashes($_POST["email"]) : '');
 	$smarty->assign ('content_signup', RELA_DIR."member/signup.php");
 	
 	$smarty->assign ('content_header', CURRENT_THEME.'/content.header.tpl');
