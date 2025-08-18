@@ -2,7 +2,7 @@
 global $admin_info, $smarty;
 	$smarty->assign ('content_title', constant('TEMPLATE_0032'));
 
-	$smarty->assign ('php_self', $php_self);
+	$smarty->assign ('php_self', $_SERVER["PHP_SELF"]);
 	$smarty->assign ('currentPage', $currentPage);
 	$smarty->assign ('content_warning', $message);	
     $arr = array();
