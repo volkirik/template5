@@ -1,7 +1,7 @@
 <?php
 
-	$smarty->assign ('content_title', TEMPLATE_0090);
-    $smarty->assign ('content_tip', TEMPLATE_0091);
+	$smarty->assign ('content_title', constant('TEMPLATE_0090'));
+    $smarty->assign ('content_tip', constant('TEMPLATE_0091'));
 	$smarty->assign ('content_warning', $message);
 	$smarty->assign ('php_self', $_SERVER["PHP_SELF"]);
 	$smarty->assign ('password2', $password2);
