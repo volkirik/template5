@@ -1,7 +1,7 @@
 <?php
 class MemberUpdateContact
 {
-	function showForm($message)
+	function showForm($message="")
 	{
 		global $member_info;
 		

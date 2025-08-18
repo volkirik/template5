@@ -1,7 +1,7 @@
 <?php
 class Whois
 {
-	function showCheckForm($message)
+	function showCheckForm($message="")
 	{
 		global $conn, $smarty;
 		

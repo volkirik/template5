@@ -1,7 +1,7 @@
 <?php
 class DomainLock
 {
-	function listDomains($message)
+	function listDomains($message="")
 	{
 		global $conn, $smarty;
 		
@@ -347,7 +347,7 @@ $xml='<?xml version="1.0" encoding="UTF-8"?>
 		
 	}
 	
-	function showNS($message)
+	function showNS($message="")
 	{
 		global $conn, $smarty;
 		

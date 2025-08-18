@@ -1,7 +1,7 @@
 <?php
 class RegisterDomain
 {
-	function showCheckForm($message){
+	function showCheckForm($message=""){
 		global $conn, $smarty,  $currentuser;
 		
 		$sql = "select * from products where flag = 0 and product_type = 1";
@@ -123,7 +123,7 @@ class RegisterDomain
 		die();
 	}
 
-    function selectMember($message){
+    function selectMember($message=""){
         global $conn, $smarty, $currentuser;
     
         $user_info = $currentuser->checkAdminLogin();
@@ -182,7 +182,7 @@ class RegisterDomain
     
     }   
     
-    function addDomains ($message){
+    function addDomains ($message=""){
         global $conn, $smarty, $currentuser;
          
          $user_info = $currentuser->checkAdminLogin();
@@ -359,7 +359,7 @@ class RegisterDomain
 	}
 
 
-    function showPaymentInfo($message){
+    function showPaymentInfo($message=""){
         global $conn, $member_info, $currentuser;
         
         $user   =   $_SESSION['selected_user'];

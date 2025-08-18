@@ -7,7 +7,7 @@ class DomainLock
         $domains = array();
     }
     
-	function listDomains($message)
+	function listDomains($message="")
 	{
 		global $conn, $smarty;
 		/*echo "<br>test";
@@ -361,7 +361,7 @@ $xml='<?xml version="1.0" encoding="UTF-8"?>
 		
 	}
 	
-	function showNS($message)
+	function showNS($message="")
 	{
 		global $conn, $smarty;
 		

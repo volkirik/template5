@@ -1,7 +1,7 @@
 <?php
 class AdminManage
 {
-	function listAdmin($message)
+	function listAdmin($message="")
 	{
 		global $conn;
 		global $smarty;
@@ -26,7 +26,7 @@ class AdminManage
 		die();
 	}
 	
-	function showAddForm($message)
+	function showAddForm($message="")
 	{   global $smarty;
 	
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
@@ -86,7 +86,7 @@ class AdminManage
 		die();
 	}
 
-	function showModifyForm($message)
+	function showModifyForm($message="")
 	{
 		global $conn, $smarty;
 		
@@ -247,7 +247,7 @@ class AdminManage
 		die();
 	}
 	
-	function showSetTask($message)
+	function showSetTask($message="")
 	{
 		global $conn;
 		global $smarty;

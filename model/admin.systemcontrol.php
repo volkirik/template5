@@ -1,7 +1,7 @@
 <?php
 class SystemControl
 {
-	function showStatus($message)
+	function showStatus($message="")
 	{
 		global $conn, $smarty;
 		
@@ -71,7 +71,7 @@ class SystemControl
 			$website_language = 1;
 		}
 		if ($current_skin == ''){
-			$current_skin = 'template_english';
+			$current_skin = 'template_generic';
 		}
 	/*	$d = dir("../templates");
 		while($entry = $d->read())

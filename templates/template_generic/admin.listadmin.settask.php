@@ -11,7 +11,7 @@ global $admin_info, $smarty;
 	$smarty->assign ('content_header', CURRENT_THEME.'/content.header.tpl');
 	$smarty->assign ('content_body', CURRENT_THEME.'/admin.listadmin.settask.tpl');
     $smarty->assign ('admin_id', $admin_id);
-	$smarty->assign ('current_page', $_REQUEST["currentPage"]);
+	$smarty->assign ('current_page', isset($_REQUEST["currentPage"]) ? $_REQUEST["currentPage"] : 1);
  
     $arr = array();
 while(!$rs->EOF)

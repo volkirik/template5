@@ -18,7 +18,7 @@ class DomainRegistration
 	}*/
 	
     
-    function showCheckForm($message)
+    function showCheckForm($message="")
 	{	global $conn, $smarty,  $currentuser;
 		
 		$sql = "select * from products where flag = 0 and product_type = 1";
@@ -100,7 +100,7 @@ class DomainRegistration
 		die();
 	}
 	
-	function selectMember($message)
+	function selectMember($message="")
 	{
 		global $conn, $smarty;
 		
@@ -117,7 +117,7 @@ class DomainRegistration
 		die();		
 	}
 	
-	function showRegisterForm($message)
+	function showRegisterForm($message="")
 	{
 		global $conn, $smarty, $currentuser;
 		

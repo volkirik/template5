@@ -1,7 +1,7 @@
 <?php
 class FundsManage
 {
-	function showForm($message)
+	function showForm($message="")
 	{   global $smarty;
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/admin.fundsmanage.form.php");

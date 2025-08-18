@@ -1,7 +1,7 @@
 <?php
 class Whois
 {
-	function showCheckForm($message)
+	function showCheckForm($message="")
 	{
 		global $conn, $smarty, $admin_info;
 		//var_dump($admin_info); exit; // debug purpose only!

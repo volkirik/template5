@@ -1,7 +1,7 @@
 <?php
 class MemberSignup
 {
-	function showForm($message)
+	function showForm($message="")
 	{   global $smarty;
 		if($message || isset($_REQUEST["Submit"]))
 		{

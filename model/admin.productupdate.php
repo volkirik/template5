@@ -1,7 +1,7 @@
 <?php
 class ProductUpdate
 {
-	function showNewDomain($message)
+	function showNewDomain($message="")
 	{
 		global $conn;
 		global $smarty;

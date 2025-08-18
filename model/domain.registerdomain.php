@@ -1,7 +1,7 @@
 <?php
 class DomainRegistration
 {
-	function showCheckForm($message)
+	function showCheckForm($message="")
 	{
 		global $conn, $smarty;
 		
@@ -75,7 +75,7 @@ class DomainRegistration
 		die();
 	}
 	
-	function showRegisterForm($message)
+	function showRegisterForm($message="")
 	{
 		global $conn;
 		global $member_info;

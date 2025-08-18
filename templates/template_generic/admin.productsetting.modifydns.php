@@ -8,7 +8,7 @@ global $admin_info;
 	$smarty->assign ('product_id', $product_id);
 	$smarty->assign ('product_name', $product_name);
 	$smarty->assign ('product_type', $product_type);
-	$smarty->assign ('currentPage', $_REQUEST["currentPage"]);
+	$smarty->assign ('currentPage', isset($_REQUEST["currentPage"]) ? $_REQUEST["currentPage"] : 1);
 	$smarty->assign ('default_dns1', $default_dns1);
 	$smarty->assign ('default_dns2', $default_dns2);
 	

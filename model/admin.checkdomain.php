@@ -1,7 +1,7 @@
 <?php
 class DomainCheck
 {
-	function showCheckForm($message)
+	function showCheckForm($message="")
 	{
 		global $conn;
 		global $smarty;

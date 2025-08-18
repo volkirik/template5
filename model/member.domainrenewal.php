@@ -1,7 +1,7 @@
 <?php
 class DomainRenewal
 {
-	function listDomains($message)
+	function listDomains($message="")
 	{
 		global $conn, $smarty;
 		

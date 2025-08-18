@@ -3,7 +3,7 @@
 class FundManager
 {
  
- function showForm($message){
+ function showForm($message=""){
     global $conn, $member_info;
     
     include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
@@ -15,7 +15,7 @@ class FundManager
  
  }
 
- function selectGateway($msg){
+ function selectGateway($msg=""){
     global $conn, $member_info, $domain;
     
     $fund_amount = $_REQUEST['fund_amount'];
@@ -31,7 +31,7 @@ class FundManager
  
  }
  
- function updatePaymentInfo ($msg){
+ function updatePaymentInfo ($msg=""){
      global $conn, $member_info, $domain;
      
      $item_name = "Fund transfer by user";
@@ -55,13 +55,13 @@ class FundManager
     
  }
  
- function paymentResult ($msg){
+ function paymentResult ($msg=""){
     global $conn, $member_info, $domain;
     //print_r ($_SESSION); print_r ($_POST);
     $domain->paymentResult();
  }
  
- function addFunds ($msg){
+ function addFunds ($msg=""){
     global $conn, $member_info, $domain, $currentuser;
     
     //echo "addFunds.."; ob_flush (); flush ();

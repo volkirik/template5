@@ -2,7 +2,7 @@
 
  class DomainSync{
 
-    function showForm($message){
+    function showForm($message=""){
 	    global $conn, $smarty;
 		
 		$sql = "select * from products where flag = 0 and product_type = 1";

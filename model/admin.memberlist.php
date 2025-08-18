@@ -1,7 +1,7 @@
 <?php
 class MemberList
 {
-	function listMember($message)
+	function listMember($message="")
 	{
 		global $conn, $smarty;
 		
@@ -149,7 +149,7 @@ class MemberList
 		die();
 	}
 
-	function showModifyForm($message)
+	function showModifyForm($message="")
 	{
 		global $conn, $smarty;
 		

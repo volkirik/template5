@@ -1,7 +1,7 @@
 <?php
 class MemberOrderList
 {
-	function listOrder($message)
+	function listOrder($message="")
 	{
 		global $conn;
 		global $member_info;

@@ -1,7 +1,7 @@
 <?php
 class DomainManage
 {
-	function listDomain($message)
+	function listDomain($message="")
 	{
 		global $conn;
 		global $member_info;
@@ -104,7 +104,7 @@ class DomainManage
 		die();
 	}
 	
-	function showContact($message)
+	function showContact($message="")
 	{
 		global $conn;
 		global $member_info;
@@ -770,7 +770,7 @@ class DomainManage
 		$this->listDomain(DOMAIN_0062);
 	}
 	
-	function showNS($message)
+	function showNS($message="")
 	{
 		global $conn;
 		global $member_info;

@@ -2,7 +2,7 @@
 
 class PaymentGateway{
 
- function showForm ($message){
+ function showForm ($message=""){
     global $conn, $member_info, $currentuser;
         
     $sql = "select * from gateway_info";

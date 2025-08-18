@@ -1,7 +1,7 @@
 <?php
 class MemberGetPassword
 {
-	function showForm($message)
+	function showForm($message="")
 	{   global $smarty;
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/member.getpassword.form.php");

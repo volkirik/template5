@@ -11,7 +11,7 @@ global $smarty;
 	$smarty->assign ('admin_password1', $admin_password1);
 	$smarty->assign ('init_admin_flag', intval($admin_flag));
 	$smarty->assign ('admin_id', $admin_id);
-	$smarty->assign ('current_page', $_REQUEST["currentPage"]);
+	$smarty->assign ('current_page', isset($_REQUEST["currentPage"]) ? $_REQUEST["currentPage"] : 1);
 	
 	$smarty->assign ('content_header', CURRENT_THEME.'/content.header.tpl');
 	$smarty->assign ('content_body', CURRENT_THEME.'/admin.listadmin.modifyform.tpl');

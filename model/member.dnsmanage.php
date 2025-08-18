@@ -1,7 +1,7 @@
 <?php
 class DnsManage
 {
-	function listDns($message)
+	function listDns($message="")
 	{
 		global $conn, $smarty;
 

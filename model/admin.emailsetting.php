@@ -2,7 +2,7 @@
 
  class EmailSetting{
 
-    function showForm($message){
+    function showForm($message=""){
 	    global $conn, $smarty;
 		
 		$sql = "select * from mail_settings";
@@ -101,7 +101,7 @@
         $this->showForm('Email Settings successfully saved.');
 	} 
  
-	function showEmail ($message){
+	function showEmail ($message=""){
 	    global $conn, $smarty;
 		
 		if (isset($_REQUEST['show'])){

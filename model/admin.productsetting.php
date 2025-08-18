@@ -1,7 +1,7 @@
 <?php
 class ProductSetting
 {
-	function listProduct($message)
+	function listProduct($message="")
 	{
 		global $conn, $smarty;
 		//echo "<br>message : ".$message;		
@@ -96,7 +96,7 @@ class ProductSetting
 		die();
 	}
 
-	function showModifyDNS($message)
+	function showModifyDNS($message="")
 	{
 		global $conn, $smarty;
 		
@@ -220,7 +220,7 @@ class ProductSetting
 		die();
 	}
 
-	function showModifyPrice($message)
+	function showModifyPrice($message="")
 	{
 		global $conn, $smarty;
 		
