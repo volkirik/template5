@@ -191,7 +191,7 @@ CREATE TABLE pp_test (
 /* Table: web_config						*/
 /*==============================================================*/
 CREATE TABLE if not exists web_config (
- current_skin varchar(50) default 'template_english',
+ current_skin varchar(50) default 'template_generic',
   website_language int(11) default '1',
   title varchar(200) default NULL,
   copyright varchar(200) default NULL,
