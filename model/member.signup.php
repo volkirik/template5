@@ -35,7 +35,7 @@ class MemberSignup
 
 	function addMember()
 	{
-		global $conn, $domain_obj;
+		global $conn, $domain_obj, $member_name, $member_password1;
 		
 		$member_name		= handleData($_REQUEST["member_name"]);
 		$member_password1	= handleData($_REQUEST["member_password1"]);
@@ -145,7 +145,7 @@ class MemberSignup
 		//echo $member_password1."<br>";
 		$member_name		= handleSQLData($member_name);
 		//echo $member_password1;
-        $member_password1	= handleSQLData(md5($member_password1));
+        $member_password_md5	= handleSQLData(md5($member_password1));
 		$r_name			= handleSQLData($r_name);
 		$r_org			= handleSQLData($r_org);
 		$r_address1		= handleSQLData($r_address1);
@@ -168,7 +168,7 @@ class MemberSignup
 				r_postalcode,			r_telephone,		r_telephone_ext,
 				r_fax,				r_fax_ext,		r_email
 			)values('" .
-				$member_name . "', '".$member_password1."',0," .
+				$member_name . "', '".$member_password_md5."',0," .
 				"0, '" .			getDatetime() . "', 	0," .
 				"'', '" .			$r_name . "', '" . 	$r_org . "', '" .
 				$r_address1 . "', '" .		$r_address2 . "', '" .	$r_address3 . "', '" .
@@ -189,7 +189,7 @@ class MemberSignup
 	}
 	
 	function showSuccessfulInfo()
-	{   global $smarty;
+	{   global $smarty, $member_name, $member_password1;
 	
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/title.inc.php");
 		include(ROOT_DIR . "templates/" . CURRENT_SKIN . "/member.signup.successful.php");
