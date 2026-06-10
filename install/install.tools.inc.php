@@ -105,7 +105,7 @@ function processStep2($message)
 	define(\"DB_USER\", \"" . $database_username . "\");
 	define(\"DB_PASSWORD\", \"" . $database_password . "\");
 	define(\"DB_DATABASE\", \"" . $database_name . "\");
-	define(\"ROOT_DIR\", dirname(__FILE__) . \"/\");
+	define(\"ROOT_DIR\", dirname(__FILE__) . DIRECTORY_SEPARATOR);
 ?>";
 	fputs($fp, $content);
 	fclose($fp);
