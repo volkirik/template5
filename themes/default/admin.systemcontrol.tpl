@@ -23,17 +23,13 @@
       <td width="32%" height="25" bgcolor="#E1ECFB">Website Language</td>
       <td width="68%" height="25" bgcolor="#F2F8FD"> 
         <select name="website_language">
-          
-{if $website_language == 1}
-
-          <option value="1" selected>English</option>
-          <option value="2">Turkish</option>
-          <?php
-{else}
-
-          <option value="1">English</option>
-          <option value="2" selected>Turkish</option>
-{/if}
+          {foreach from=$website_languages item=lang}
+          	{if $website_language == $lang.id}
+    		<option value="{$lang.id}" selected>{$lang.name}</option>
+    		{else}
+    		<option value="{$lang.id}">{$lang.name}</option>
+    		{/if}
+	  {/foreach}
         </select>
       </td>
     </tr>
