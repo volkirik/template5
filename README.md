@@ -1,53 +1,119 @@
-# template5
-## added PHP8 support to template4
-### updated Smarty engine
-### updated AdoDB engine
-### updated Whois engine
-### added up-to-date PHPMailer engine
-### added up-to-date Captcha engine
-show Captcha in public forms (login,register,forgot,whois,domain)
+# Template5 Changelog
 
-made Captcha optional in system settings
-### ereg and ereg_replace polyfills
-### fixed themes
-fixed default (english) theme
+## PHP 8 Support
 
-fixed default_turkish theme
+Template5 is based on Template4 and introduces PHP 8 compatibility, along with several engine updates, theme fixes, and general improvements.
 
-fixed simpleGreen (english) theme
+### Engine Updates
 
-fixed simpleGreen_turkish theme
-### change charset from iso to utf-8
-### fixed year range
-replace 2002-2005 (year range in search forms) with 1970-date("Y")
+- Updated the Smarty engine.
+- Updated the AdoDB engine.
+- Updated the Whois engine.
+- Added an up-to-date PHPMailer engine.
+- Added an up-to-date Captcha engine.
 
-replace 2005-2040 (year range in payment forms) with date("Y")+15
-### always show domain (un)availability messages in Whois
-### fix PHP whois function and directly query TLD registries
-### fixed RELA_DIR variable in themes
-### use single template (generic) as we have language files.
+### Captcha Improvements
 
-# TO-DO
+- Added Captcha support to public forms:
+  - Login
+  - Registration
+  - Forgot password
+  - Whois
+  - Domain search
+- Made Captcha optional via system settings.
+
+### PHP Compatibility
+
+- Added polyfills for `ereg` and `ereg_replace`.
+
+### Theme Fixes
+
+Fixed the following themes:
+
+- Default English theme
+- Default Turkish theme
+- simpleGreen English theme
+- simpleGreen Turkish theme
+
+### Character Encoding
+
+- Changed the character encoding from ISO to UTF-8.
+
+### Year Range Fixes
+
+- Replaced the `2002–2005` year range in search forms with `1970` through `date("Y")`.
+- Replaced the `2005–2040` year range in payment forms with `date("Y") + 15`.
+
+### Whois Improvements
+
+- Domain availability and unavailability messages are now always displayed in Whois results.
+- Fixed the PHP Whois function.
+- Whois queries now directly query the relevant TLD registries.
+
+### Theme Path Fixes
+
+- Fixed the `RELA_DIR` variable usage in themes.
+
+### Template Structure
+
+- Switched to a single generic template structure, as language files are now used for localization.
+
 ## Roadmap / Planned Features
-The following features are planned for future releases of the Domain Name Management System:
-### Error log, access log, and success log management
-### Member-based language preferences with instant language switching
-### Additional German (DE) language support, alongside Turkish (TR), English (EN), and Chinese (CN)
-### Foreign exchange rate support
-### TRY and EUR transaction support
-### WHOIS privacy / privacy extension support
-### Managed DNS records support
-### Help desk integration with HESK
-### Sub-reseller support and integration
-### Anonymous domain name operations for end users
-(email and domain password-based login support)
-### Abuse notice record management and support
-### Payment declaration support
-### Application Programming Interface (API) support
-### Automatic and manual price list import support from registrars
-### Initial support for domain name transfers, including transfer information display
-### Advanced domain name transfer support, including accept and reject operations
-### Domain restore support
-### Internal domain transfer support
-### Two-factor authentication support
-### Cryptocurrency payment support
+
+The following features are planned for future releases of the Domain Name Management System.
+
+### Logging and Monitoring
+
+- Error log management
+- Access log management
+- Success log management
+
+### Language and Localization
+
+- Member-based language preferences
+- Instant language switching
+- Additional German (DE) language support, alongside:
+  - Turkish (TR)
+  - English (EN)
+  - Chinese (CN)
+
+### Currency and Payments
+
+- Foreign exchange rate support
+- TRY and EUR transaction support
+- Payment declaration support
+- Cryptocurrency payment support
+
+### Domain Management
+
+- WHOIS privacy / privacy extension support
+- Managed DNS records support
+- Anonymous domain name operations for end users
+  - Email-based login support
+  - Domain password-based login support
+- Initial support for domain name transfers, including transfer information display
+- Advanced domain name transfer support, including accept and reject operations
+- Domain restore support
+- Internal domain transfer support
+
+### Registrar and Pricing Integration
+
+- Automatic price list import support from registrars
+- Manual price list import support from registrars
+
+### Reseller Features
+
+- Sub-reseller support and integration
+
+### Support and Abuse Management
+
+- Help desk integration with HESK
+- Abuse notice record management and support
+
+### Security
+
+- Two-factor authentication support
+
+### Developer Features
+
+- Application Programming Interface (API) support
