@@ -329,6 +329,8 @@ define("TEMPLATE_0145", 'Şifremi Unuttum');
 define("TEMPLATE_0146", 'Giriş Yap');
 define("TEMPLATE_0147", 'Diğer operasyonlar');
 
+define("TEMPLATE_LANG", 'Türkçe');
+
 // gelecek ihtiyaçlar için rezerve edildi.
 define("TEMPLATE_0148", '');
 define("TEMPLATE_0149", '');

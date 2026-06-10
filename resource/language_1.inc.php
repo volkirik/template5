@@ -329,6 +329,8 @@ define("TEMPLATE_0145", 'Forgot Password');
 define("TEMPLATE_0146", 'Login');
 define("TEMPLATE_0147", 'Other operation');
 
+define("TEMPLATE_LANG", 'English');
+
 // reserved for future use.
 define("TEMPLATE_0148", '');
 define("TEMPLATE_0149", '');
