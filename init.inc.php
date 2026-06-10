@@ -46,7 +46,30 @@ define("REG_PORT", $rs->fields["reg_port"]);
 /**
  * Other setting
  */
-define("RELA_DIR", $rs->fields["rela_dir"]);
+//define("RELA_DIR", $rs->fields["rela_dir"]);
+function detect_base_url(): string
+{
+    $docRoot = realpath($_SERVER['DOCUMENT_ROOT'] ?? '');
+    $baseDir = realpath(__DIR__);
+
+    if (!$docRoot || !$baseDir) {
+        return '/';
+    }
+
+    $docRoot = str_replace('\\', '/', $docRoot);
+    $baseDir = str_replace('\\', '/', $baseDir);
+
+    // Proje dizini document root altında değilse güvenli fallback
+    if (strpos($baseDir, $docRoot) !== 0) {
+        return '/';
+    }
+
+    $relative = substr($baseDir, strlen($docRoot));
+    $relative = trim($relative, '/');
+
+    return $relative === '' ? '/' : '/' . $relative . '/';
+}
+define("RELA_DIR", detect_base_url());
 define("DOM_UPG_HOST", $rs->fields["dom_upg_host"]);
 define("DOM_UPG_PORT", $rs->fields["dom_upg_port"]);
 define("DOM_UPG_URL", $rs->fields["dom_upg_url"]);
