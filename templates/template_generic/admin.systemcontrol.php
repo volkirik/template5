@@ -26,18 +26,38 @@ while($entry = $d->read())
 	if (strstr($entry, "template_"))
 	    array_push($arr, $entry);
 }
-    $smarty->assign ('entry', $arr);
+$smarty->assign ('entry', $arr);
 	
-	$arr = array();
-	$d = dir("../themes");
-	while ($theme = $d->read()){
-        if (($theme != ".") && ($theme != "..") )	
-		    array_push($arr, $theme);  
-	}
-    $smarty->assign ('themes', $arr);
-		
-	$smarty->assign ('content_header', CURRENT_THEME.'/content.header.tpl');
-	$smarty->assign ('content_body', CURRENT_THEME.'/admin.systemcontrol.tpl');
+$arr = array();
+$d = dir("../themes");
+while ($theme = $d->read()){
+	if (($theme != ".") && ($theme != "..") )	
+		array_push($arr, $theme);  
+}
+$smarty->assign ('themes', $arr);
+	
+$website_languages = [];
+$d = "../resource";
+foreach (scandir($d) as $entry) {
+
+    if (preg_match('/^language_(\d+)\.inc\.php$/', $entry, $m)) {
+
+        $file = $d . DIRECTORY_SEPARATOR . $entry;
+        $content = file_get_contents($file);
+
+        if (preg_match('/define\s*\(\s*[\'"]TEMPLATE_LANG[\'"]\s*,\s*[\'"]([^\'"]+)[\'"]\s*\)\s*;/u', $content, $langMatch)) {
+            $website_languages[] = [
+                'id'   => (int) $m[1],
+                'name' => $langMatch[1],
+                'file' => $entry,
+            ];
+        }
+    }
+}
+$smarty->assign ('website_languages', $website_languages);
+
+$smarty->assign ('content_header', CURRENT_THEME.'/content.header.tpl');
+$smarty->assign ('content_body', CURRENT_THEME.'/admin.systemcontrol.tpl');
 
 ?>
        
