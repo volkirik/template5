@@ -297,11 +297,7 @@ define("TEMPLATE_0117", 'Lütfen yeni hesap bilgilerinizi doğrudan girin. Şifr
 define("TEMPLATE_0118", "Sistem Hatası");
 define("TEMPLATE_0119", 'Sistem anasayfası');
 define("TEMPLATE_0120", "Hoşgeldiniz");
-define("TEMPLATE_0121", '<p>- ÜCRETSİZ ÜYELİK</p>'
-.'<p>- PAYPAL veya KREDİ KARTIYLA ÖDEME YAPABİLİRSİNİZ</p>'
-.'<p>- HESAP BAKİYENİZİN SON KULLANMA TARİHİ YOKTUR</p>'
-.'<p>- İHTİYACINIZ OLAN KADAR BAKİYE YÜKLEYEBİLİRSİNİZ</p>'
-.'<p>- KOLAY ve SADE YÖNETİM TASARIMI</p>');
+define("TEMPLATE_0121", '<p>- ÜCRETSİZ ÜYELİK</p><p>- PAYPAL veya KREDİ KARTIYLA ÖDEME YAPABİLİRSİNİZ</p><p>- HESAP BAKİYENİZİN SON KULLANMA TARİHİ YOKTUR</p><p>- İHTİYACINIZ OLAN KADAR BAKİYE YÜKLEYEBİLİRSİNİZ</p><p>- KOLAY ve SADE YÖNETİM TASARIMI</p>');
 define("TEMPLATE_0122", 'Sistem Durumu');
 define("TEMPLATE_0123", "Üzgünüz, sistem bakımda.");
 define("TEMPLATE_0124", 'Anasayfa');

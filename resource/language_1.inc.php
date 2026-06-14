@@ -297,11 +297,7 @@ define("TEMPLATE_0117", 'Please input your new account information directly. If 
 define("TEMPLATE_0118", "System Error");
 define("TEMPLATE_0119", 'System homepage');
 define("TEMPLATE_0120", "Welcome");
-define("TEMPLATE_0121", '<p>- FREE MEMBERSHIP</p>'
-.'<p>- PAY WITH PAYPAL, OR CREDIT CARD</p>'
-.'<p>- NO FUNDS EXPIRY</p>'
-.'<p>- ADD AS MUCH FUNDS AS YOU NEED</p>'
-.'<p>- EASY and SIMPLE MANAGEMENT</p>');
+define("TEMPLATE_0121", '<p>- FREE MEMBERSHIP</p><p>- PAY WITH PAYPAL, OR CREDIT CARD</p><p>- NO FUNDS EXPIRY</p><p>- ADD AS MUCH FUNDS AS YOU NEED</p><p>- EASY and SIMPLE MANAGEMENT</p>');
 define("TEMPLATE_0122", 'System status');
 define("TEMPLATE_0123", "Sorry, the system is in the maintenance");
 define("TEMPLATE_0124", 'Home');
