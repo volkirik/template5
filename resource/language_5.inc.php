@@ -326,6 +326,7 @@ define("TEMPLATE_0146", 'Iniciar sesión');
 define("TEMPLATE_0147", 'Otra operación');
 
 define("TEMPLATE_LANG", 'Español');
+define("TEMPLATE_LANG_JS", "Por favor, guarde primero cualquier trabajo u operación que no haya guardado.\n\n¿Desea recargar la página ahora?\n\nSí = No tengo nada sin guardar, ¡recargar!\nNo = Guardaré primero y recargaré más tarde.");
 
 // reserved for future use.
 define("TEMPLATE_0148", '');

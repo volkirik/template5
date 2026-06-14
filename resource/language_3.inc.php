@@ -326,6 +326,8 @@ define("TEMPLATE_0145", "忘记密码");
 define("TEMPLATE_0146", "登录");
 define("TEMPLATE_0147", "其他操作");
 define("TEMPLATE_LANG", "简体中文");
+define("TEMPLATE_LANG_JS", "请先保存所有尚未保存的工作或操作。\n\n您现在要重新加载页面吗？\n\n是 = 我没有未保存的内容，重新加载！\n否 = 我会先保存，稍后再重新加载。");
+
 // reserved for future use.
 define("TEMPLATE_0148", "");
 define("TEMPLATE_0149", "");

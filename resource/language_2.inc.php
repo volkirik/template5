@@ -326,6 +326,7 @@ define("TEMPLATE_0146", 'Giriş Yap');
 define("TEMPLATE_0147", 'Diğer operasyonlar');
 
 define("TEMPLATE_LANG", 'Türkçe');
+define("TEMPLATE_LANG_JS", "Lütfen kaydetmediğiniz iş/işleminiz varsa önce kaydediniz.\n\nŞimdi sayfayı yenilemek ister misiniz?\n\nEvet = Kaydetmediğim yok, yenile!\nHayır = Kaydedeceğim ve sonra yenilerim!");
 
 // gelecek ihtiyaçlar için rezerve edildi.
 define("TEMPLATE_0148", '');

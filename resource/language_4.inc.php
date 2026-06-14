@@ -326,6 +326,7 @@ define("TEMPLATE_0146", 'Anmelden');
 define("TEMPLATE_0147", 'Andere Operation');
 
 define("TEMPLATE_LANG", 'Deutsch');
+define("TEMPLATE_LANG_JS", "Bitte speichern Sie zuerst alle nicht gespeicherten Arbeiten oder Vorgänge.\n\nMöchten Sie die Seite jetzt neu laden?\n\nJa = Ich habe nichts Ungespeichertes, neu laden!\nNein = Ich speichere zuerst und lade später neu.");
 
 // reserved for future use.
 define("TEMPLATE_0148", '');
