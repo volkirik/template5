@@ -1,6 +1,6 @@
 <table width="100%" cellspacing="0" cellpadding="0" border="0">
 	<tr>
-		<td class=footer>{$copyright} </td>
+		<td class="footer" id="footer_el">{$copyright} </td>
 	</tr>
 	
 </table>

@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>{$title|default:"Online NIC :: Default Theme"}</title>
 	<link href="{$RELA_DIR}themes/{$CURRENT_THEME}/style.css" rel="stylesheet" type="text/css">
+	<script type='text/javascript' src='{$RELA_DIR}generator.js.php'></script>
 </head>
 
 <body class="bodystyle" align=center>
