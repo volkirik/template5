@@ -13,7 +13,7 @@
         </TD>
         *}
 		<TD>&nbsp;			</TD>
-		<TD colspan="3" align="right" class="footerStyle">{$copyright}</TD>
+		<TD colspan="3" align="right" class="footerStyle" id="footer_el">{$copyright}</TD>
 	</TR>
     <TR><TD colspan="4">&nbsp;			</TD></TR>
     </table>
