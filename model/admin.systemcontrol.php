@@ -66,14 +66,26 @@ class SystemControl
         $renew_status        = handleData($_REQUEST["domain_renew"]);
         $captcha_status        = handleData($_REQUEST["captcha_enable"]);
 		
-		if($website_language != 1 && $website_language != 2)
+		$d = dir("../resource"); $flag=0;
+		if (preg_match('/^\d+$/', $website_language) ) {
+			while($entry = $d->read())
+			{
+				if($entry == 'language_'.$website_language.'.inc.php')
+				{
+					$flag = 1;
+					break;
+				}
+			}
+		}
+//		if($website_language != 1 && $website_language != 2){}
+		if($flag != 1)
 		{
 			$website_language = 1;
 		}
 		if ($current_skin == ''){
 			$current_skin = 'template_generic';
 		}
-	/*	$d = dir("../templates");
+	/*	$d = dir("../templates"); $flag=0;
 		while($entry = $d->read())
 		{
 			if($entry == $current_skin)
@@ -125,7 +137,7 @@ class SystemControl
 			$this->showStatus(ADMIN_0039);
 		}
 		
-		$d = dir("../themes");
+		$d = dir("../themes"); $flag=0;
 		while($entry = $d->read())
 		{
 			if($entry == $current_theme)
