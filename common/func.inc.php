@@ -1,4 +1,5 @@
 <?php
+
 if (!function_exists('split')) {
     function split($pattern, $subject, $limit=-1, $flags=0){
         $is_regex=preg_split($pattern, $subject, $limit, $flags);
