@@ -3,10 +3,10 @@
 $lines = file("server.inc.php");
 
 if(count($lines)>1){
-	include("server.inc.php");
-	include("common/func.inc.php");
-	include("common/db.inc.php");
-	include("init.inc.php");
+	include_once("server.inc.php");
+	include_once("common/func.inc.php");
+	include_once("common/db.inc.php");
+	include_once("init.inc.php");
 	include(ROOT_DIR . "model/member.login.php");
 
 	$member = new MemberLogin();
