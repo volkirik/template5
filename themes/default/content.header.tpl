@@ -4,11 +4,11 @@
 
 		  <tr>
             <td class="greyHeadRight">
-			    <img src="{$RELA_DIR}/themes/{$CURRENT_THEME}/images/greyhead_left.gif" width="6" height="22">
+			    <img src="{$RELA_DIR}themes/{$CURRENT_THEME}/images/greyhead_left.gif" width="6" height="22">
 			</td>
             <td class="greyHead">{$content_title} </td>
             <td class="greyHeadRight">
-			    <img src="{$RELA_DIR}/themes/{$CURRENT_THEME}/images/greyhead_right.gif" width="6" height="22">
+			    <img src="{$RELA_DIR}themes/{$CURRENT_THEME}/images/greyhead_right.gif" width="6" height="22">
 			</td>
           </tr>
 	  {/if} 
